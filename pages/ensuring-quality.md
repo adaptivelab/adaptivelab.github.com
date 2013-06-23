@@ -55,7 +55,7 @@ Who decides that a task has been completed satisfactorily to the intended specif
 Release
 -------
 
-Everything that has been signed-off since the last release is brought into the master branch and deployed into a staging (pre-production) environment.  This allows everyone to see all the new features working together in a production-like environment before a final QA assesment means that deployment to production can go ahead.  Releases are scheduled during sprint planning.  They are not scheduled for Friday afternoons or for other awkward times!
+Everything that has been signed-off since the last release is brought into the master branch and deployed into a staging (pre-production) environment.  This allows everyone to see all the new features working together in a production-like environment before a final QA assessment means that deployment to production can go ahead.  Releases are scheduled during sprint planning.  They are not scheduled for Friday afternoons or for other awkward times!
 
 
 
