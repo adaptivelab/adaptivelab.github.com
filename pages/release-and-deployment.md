@@ -62,7 +62,7 @@ It is definitely prudent to release production-ready code to a pre-production or
 One-command Releasing
 ---------------------
 
-Often, a release involves a set of procedures - updating code, migrating a db, creating a few symlinks, etc.  The list of procedures grows and changes as each project grows over time.  To avoid complications, every project makes use of deplpoyment wrappers like [Fabric](http://docs.fabfile.org/en/1.5/) or [Capistrano](https://github.com/capistrano/capistrano).  These allow the configuration and arbitrary procedures to be managed centrally, with a common deployment pattern, making it possible for any developer to be able to deploy code competently.
+Often, a release involves a set of procedures - updating code, migrating a db, creating a few symlinks, etc.  The list of procedures grows and changes as each project grows over time.  To avoid complications, every project makes use of deployment wrappers like [Fabric](http://docs.fabfile.org/en/1.5/) or [Capistrano](https://github.com/capistrano/capistrano).  These allow the configuration and arbitrary procedures to be managed centrally, with a common deployment pattern, making it possible for any developer to be able to deploy code competently.
 
 
 The Release Checklist
