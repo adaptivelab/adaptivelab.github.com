@@ -14,7 +14,7 @@ we stick to can aid your confidence as a developer: having a thorough test suite
 that you can sandbox your app with ease; adding monitoring in early to save head-scratching time later; making reusable components sooner rather than later for you and your developer friends; it's all good.
 
 
-AdaptiveLab's Culture
+Adaptive Lab's Culture
 ---------------------
 
 The work environment we have established is another key factor of fearless development.  We're highly focussed on the working culture we've set up and we foster an environment where individuals in the team feel supported in what they do.  There are no stupid questions!
