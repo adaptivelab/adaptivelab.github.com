@@ -40,6 +40,6 @@ By hosting this document on github, we can facilitate changes and improvements o
 
 1. [Security](pages/security.html) -
   What needs protecting and how to protect it.  How to keep secrets.
-  
-1. [Freelancer's Guide to Working with Us](pages/freelancers-guide.html)
+
+1. [Freelancer's Guide to Working with Us](pages/freelancers-guide.html) -
   How we like to work with freelancers.
