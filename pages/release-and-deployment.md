@@ -13,7 +13,7 @@ Who is Responsible for What?
 
 If you've been working on a feature during the current sprint, once you've had it [reviewed by a colleague](/pages/ensuring-quality.html#code_reviews) and [signed-off](/pages/ensuring-quality.html#sign_off) as ready then you should [merge it into the current develop branch](/pages/using-git.html#git_flow) before the release is prepared.
 
-Once your feature has been merged into the [develop branch](/pages/using-git.html#git_flow) you should then update the [The Changelong](#the_changelog) to contain a one line description of your newly merged in but unreleased feature. This allows the person who will be doing the release later to know exactly what they are releasing. You should add this one line description under the ``Unreleased`` section of the [The Changelong](#the_changelog), for example:
+Once your feature has been merged into the [develop branch](/pages/using-git.html#git_flow) you should then update the [The Changelog](#the_changelog) to contain a one line description of your newly merged in but unreleased feature. This allows the person who will be doing the release later to know exactly what they are releasing. You should add this one line description under the ``Unreleased`` section of the [The Changelog](#the_changelog), for example:
 
     Changelog
     ---------
