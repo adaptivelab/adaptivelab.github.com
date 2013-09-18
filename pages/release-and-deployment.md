@@ -13,6 +13,21 @@ Who is Responsible for What?
 
 If you've been working on a feature during the current sprint, once you've had it [reviewed by a colleague](/pages/ensuring-quality.html#code_reviews) and [signed-off](/pages/ensuring-quality.html#sign_off) as ready then you should [merge it into the current develop branch](/pages/using-git.html#git_flow) before the release is prepared.
 
+Once your feature has been merged into the [develop branch](/pages/using-git.html#git_flow) you should then update the [The Changelong](#the_changelog) to contain a one line description of your newly merged in but unreleased feature. This allows the person who will be doing the release later to know exactly what they are releasing. You should add this one line description under the ``Unreleased`` section of the [The Changelong](#the_changelog), for example:
+
+    Changelog
+    ---------
+
+    Unreleased
+      Fixed issue with the users view
+
+    v0.5.0:
+      Added full name field for users.  Note: *requires db migration*.
+      Implemented the new designs for the sign-in form.
+
+
+This unreleased section will then be renamed during the release to the release version number.
+
 Then it's the job of one person in the team to create and deploy the release.  That person is arbitrarily nominated - eventually it will be you!
 
 
@@ -44,6 +59,8 @@ Every repository will have a README or a readme or a changelog of some sort that
 
     Changelog
     ---------
+
+    Unreleased
 
     v0.5.0:
       Added full name field for users.  Note: *requires db migration*.
