@@ -1,27 +1,29 @@
-<nav class='subnav'>
-  <ul>
-    <!-- %li.left.first -->
-    <!-- %a{:href=>"/culture/people", :class=>""} -->
-    <!-- People -->
-    <li class='left first'>
-      <a href='http://www.adaptivelab.com/culture/handbook'>
-        Handbook
-      </a>
-    </li>
-    <li class='left'>
-      <a class="active" href='http://adaptivelab.github.io/'>
-        Methodology
-      </a>
-    </li>
-  </ul>
-</nav>
-
 <section>
+  <nav class='subnav'>
+  <ul>
+      <!-- %li.left.first -->
+      <!-- %a{:href=>"/culture/people", :class=>""} -->
+      <!-- People -->
+      <li class='left first'>
+        <a href='http://www.adaptivelab.com/culture/handbook'>
+          Handbook
+        </a>
+      </li>
+      <li class='left'>
+        <a class="active" href='http://adaptivelab.github.io/'>
+          Methodology
+        </a>
+      </li>
+    </ul>
+  </nav>
+
   <h1>{{ page.title }}</h1>
 
   {% if page.tagline %}
   <blockquote><p>{{ page.tagline }}</p></blockquote>
   {% endif %}
 
-  {{ content }}
+  <section>
+    {{ content }}
+  </section>
 </section>
