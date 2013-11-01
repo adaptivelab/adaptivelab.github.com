@@ -15,16 +15,20 @@ If you're a developer: your code
 * You must write tests which we can run, covering ≥70% of the code. If you can’t work out how to test something, talk to us and we’ll see if we can help. If you really can’t test it, document it. [Here’s some more of our thoughts on testing.](/pages/testing.html)
 * Follow the appropriate style for the language and framework you’re using – for example, your Python should follow [PEP8](http://www.python.org/dev/peps/pep-0008/). [Here are some other ways we ensure code quality.](/pages/ensuring-quality.html)
 * Write documentation that contains, at the very least:
+
     <ul>
         <li>instructions on how to get the app running</li>
         <li>an overview of the function of the app that’s understandable by a non-developer</li>
     </ul>
+
 * Other nice-to-have in docs include:
+
     <ul>
         <li>system diagrams if the system is complex</li>
         <li>the rationale behind major decisions</li>
         <li>a list of known issues that haven’t yet been resolved.</li>
     </ul>
+
 
 If you’re a designer: your designs
 ----------------------------------
@@ -37,12 +41,14 @@ Your way of working
 -------------------
 
 * Follow the process we agree on, which will usually be very close to the one described on our [project management pages](/pages/project-management.html). The really key bits are:
+
     <ul>
         <li>track your progress in Asana in the same way as the rest of the team</li>
         <li>get your stories signed off</li>
         <li>if you’re a developer, do code reviews for every non-trivial feature</li>
         <li>give us daily updates via an in-person stand-up, or over Skype, or via email/[IDoneThis](https://idonethis.com/)</li>
     </ul>
+
 * If you're a developer: use Git and [GitFlow](http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/), and commit regularly with useful commit messages. [Here’s more information on how we use Git](/pages/using-git.html).
 
 Communication
