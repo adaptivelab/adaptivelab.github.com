@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <!--
-            __..--''``---....___   _..._    __
-  /// //_.-'    .-/";  `        ``<._  ``.''_ `. / // /
- ///_.-' _..--.'_    \                    `( ) ) // //
- / (_..-' // (< _     ;_..__               ; `' / ///
-  / // // //  `-._,_)' // / ``--...____..-' /// / //
+   ____
+  (.   \
+    \  |
+     \ |___(\--/)
+   __/    (  . . )
+  "'._.    '-.O.'
+       '-.  \ "|\
+          '.,,/'.,,mrf
     _   __   _   ___ ___  _  _ _  ___  _     _   ___
    / \ |  \ / \ | o \_ _|| || | || __|| |   / \ | o )
   | o || o ) o ||  _/| | | || V || _| | |_ | o || o \
@@ -35,27 +38,46 @@
           <div class='adaptive-lab'>
             <a href='/'>
               <img alt='Adaptive Lab' src='http://www.adaptivelab.com/assets/adaptive-lab-symbol.png'/>
+              <span>Adaptive Lab</span>
             </a>
           </div>
           <nav>
             <ul>
-              <li class='left first'>
-                <a href='http://www.adaptivelab.com/work'>Work</a>
+              <li class='first'>
+                <a class="{% if page.custom_body_class == 'work' %}active{% endif %}" href='http://www.adaptivelab.com//work'>
+                  <div class='label'>Work</div>
+                  <div class='description'>Work we've done</div>
+                </a>
               </li>
-              <li class='left'>
-                <a href='http://www.adaptivelab.com/#services'>Services</a>
+              <li>
+                <a href='/#services'>
+                  <div class='label'>Services</div>
+                  <div class='description'>How we help you</div>
+                </a>
               </li>
-              <li class='left'>
-                <a class="active" href='http://www.adaptivelab.com/culture/handbook'>Culture</a>
+              <li>
+                <a class="{% if page.custom_body_class == 'culture' %}active{% endif %}" href='http://www.adaptivelab.com//culture/handbook'>
+                  <div class='label'>Culture</div>
+                  <div class='description'>How we work together</div>
+                </a>
               </li>
-              <li class='right last'>
-                <a href='http://www.adaptivelab.com/contact'>Contact</a>
+              <li>
+                <a class="{% if page.custom_body_class == 'blog' %}active{% endif %}" href='http://www.adaptivelab.com//blog'>
+                  <div class='label'>Blog</div>
+                  <div class='description'>What we think</div>
+                </a>
               </li>
-              <li class='right'>
-                <a href='http://www.adaptivelab.com/jobs'>Jobs</a>
+              <li>
+                <a class="{% if page.custom_body_class == 'contact' %}active{% endif %}" href='http://www.adaptivelab.com//contact'>
+                  <div class='label'>Contact</div>
+                  <div class='description'>How to get to us</div>
+                </a>
               </li>
-              <li class='right'>
-                <a href='http://www.adaptivelab.com/blog'>Blog</a>
+              <li>
+                <a class="{% if page.custom_body_class == 'jobs' %}active{% endif %}" href='http://www.adaptivelab.com//jobs'>
+                  <div class='label'>Jobs</div>
+                  <div class='description'>Join us!</div>
+                </a>
               </li>
             </ul>
           </nav>
