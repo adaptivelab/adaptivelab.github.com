@@ -31,7 +31,10 @@ If you’re a designer: your designs
 
 * We must be able to easily access the final designs in a non-Creative-Suite format (image files or pdf)
 * We must also be able to access the editable versions of your designs.
+* Your designs should specify the dimensions of different elements and the width of padding; the hexes for colours; and the typefaces and font sizes.
+* You should provide us with image assets in a web-optimised format.
 * If you’re designing something with user interactions, we’ll need designs that clearly show each state, and (as relevant) the transitions between them, plus some documentation explaining the interactions, so everything’s crystal clear.
+* It's also important to specify which elements of the page are links, and where they go.
 
 Your way of working
 -------------------
