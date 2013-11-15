@@ -124,10 +124,14 @@ Once the code has been okayed the reviewer can close the pull request.
 **Reviewer to:**
 
 - **Rebase** against the latest develop branch
-- **Merge** via fast-forward only to develop
+- **Merge** to develop (no fast-forward)
 
+        $ git flow feature finish sm/indexing-awesomeness
+        
+        # or
+        
         $ git checkout develop
-        $ git merge --ff-only feature/sm/indexing-awesomeness
+        $ git merge --no-ff feature/sm/indexing-awesomeness
 
 - **Push** `develop` to remote
 - **Close** the *pull request* in github.
