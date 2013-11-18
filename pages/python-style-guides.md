@@ -6,11 +6,9 @@ description: ""
 
 {% include JB/setup %}
 
-## Python Style Guidelines
-
 It is important code is written to certain stylistic standards. Being able to look at code and not having to switch stylistic context makes development easier.
 
-Python is unique in the fact it has a community approved style guide known as PEP8. This guide changes and evolves over time so do keep an eye on changes to it: (http://www.python.org/dev/peps/pep-0008/)
+Python is unique in the fact it has a community approved style guide known as PEP8. This guide changes and evolves over time so do keep an eye on changes to it: ([http://www.python.org/dev/peps/pep-0008/](http://www.python.org/dev/peps/pep-0008/))
 
 The main bullet points of PEP8 are:
 * Spaces, not tabs
@@ -22,16 +20,16 @@ The main bullet points of PEP8 are:
 
 Imports should be one per line and comma separated explicit function imports should be avoided. For example:
 
-** Good: **
+**Good:**
 
     import os
     import sys
 
-** Bad: **
+**Bad:**
 
     import os, sys
 
-** Discouraged: **
+**Discouraged:**
 
     from os.path import basename, dirname, join as os_join
     from other.module.foo import join as foo_join
@@ -48,7 +46,7 @@ It also allows your code to self describe what its doing, for example:
 
 Also try and order your imports alphabetically. If you need use ``from x import y``, do not mix these within imports, keep them clear and separate. Exceptions to this are ``__future__`` imports, which need to go above all other imports, for example:
 
-** Bad: hard to read and messy **
+**Bad: hard to read and messy**
 
     from __future__ import division
     import signal
@@ -63,7 +61,7 @@ Also try and order your imports alphabetically. If you need use ``from x import 
     import logging
     from safelogger import getMultiProcessLogger
 
-** Good (much cleaner and easier to read): **
+**Good (much cleaner and easier to read):**
 
     from __future__ import division
 
@@ -100,11 +98,11 @@ However these strings are used for interpolation:
 
 When formatting strings, always use the format method. To avoid issues on Python 2.6 and older environments, and to make code as explicit as possible, always define indices or identifiers. For example:
 
-** Discouraged: **
+**Discouraged:**
 
     foo = "Hello {}".format('world')
 
-** Good: **
+**Good:**
 
     foo = "Hello {0}".format('world')
     # or
@@ -114,7 +112,7 @@ When formatting strings, always use the format method. To avoid issues on Python
 
 As PEP8 prescribes that line lengths should not be greater than 79 characters, indentation can become quite important. Especially so when you have long function definitions or are chaining function calls.
 
-** Bad: **
+**Bad:**
 
     def my_long_function(
         arg1
@@ -123,13 +121,13 @@ As PEP8 prescribes that line lengths should not be greater than 79 characters, i
 
         pass
 
-** Also Bad: **
+**Also Bad:**
 
     def my_long_function(arg1, arg2='foo',
                          arg3='bar'):
         pass
 
-** Good (Note it’s double indented which allows you to see separation from function code): **
+**Good (Note it’s double indented which allows you to see separation from function code):**
 
     def my_long_function(
             arg1
@@ -138,7 +136,7 @@ As PEP8 prescribes that line lengths should not be greater than 79 characters, i
 
         pass
 
-** Also cool: **
+**Also cool:**
 
     def my_long_function(arg1
                          arg2='foo',
@@ -153,7 +151,7 @@ Comments should start with a hash (#) and should be limited to a single line if 
 
 Also check out [PEP 257](http://www.python.org/dev/peps/pep-0257/).
 
-** Example: **
+**Example:**
 
     def foo(arg1, arg2=False):
         """
