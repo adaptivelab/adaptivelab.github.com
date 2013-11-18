@@ -37,7 +37,7 @@ Happily code away and then merge it back into develop once it's done:
 
 > Don't forget to push your develop branch up to github, to help resolve any conflicts your code might have with others working on the same repo.
 
-Git flow takes care of things like removal of branches when they're no longer needed and tagging the code every time you make a new release.
+Git flow takes care of things like removal of local branches when they're no longer needed and tagging the code every time you make a new release.
 
 
 Commit Often
