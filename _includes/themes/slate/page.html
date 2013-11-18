@@ -1,7 +1,29 @@
-<h1>{{ page.title }}</h1>
+<section>
+  <nav class='subnav' style="margin-top: 2em;">
+  <ul>
+      <!-- %li.left.first -->
+      <!-- %a{:href=>"/culture/people", :class=>""} -->
+      <!-- People -->
+      <li class='left first'>
+        <a href='http://www.adaptivelab.com/culture/handbook'>
+          Handbook
+        </a>
+      </li>
+      <li class='left'>
+        <a class="active" href='http://adaptivelab.github.io/'>
+          Methodology
+        </a>
+      </li>
+    </ul>
+  </nav>
 
-{% if page.tagline %}
-<blockquote><p>{{ page.tagline }}</p></blockquote>
-{% endif %}
+  <h1>{{ page.title }}</h1>
 
-{{ content }}
+  {% if page.tagline %}
+  <blockquote><p>{{ page.tagline }}</p></blockquote>
+  {% endif %}
+
+  <section>
+    {{ content }}
+  </section>
+</section>

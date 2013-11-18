@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About This Guide
+title: Methodology
 tagline:
 ---
 {% include JB/setup %}

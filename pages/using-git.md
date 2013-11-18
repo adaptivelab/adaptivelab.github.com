@@ -19,6 +19,7 @@ We use [git flow](https://github.com/nvie/gitflow) for managing our branches.  I
 Here's a quick example of how to work on a new feature of a new project using git flow:
 
 Clone the repo:
+
     $ git clone git@github.com:adaptivelab/adaptivelab.github.com.git
 
 Initialize git flow, accepting all the defaults:
@@ -33,9 +34,10 @@ Happily code away and then merge it back into develop once it's done:
 
     $ git flow feature finish some_awesome_addition
 
+
 > Don't forget to push your develop branch up to github, to help resolve any conflicts your code might have with others working on the same repo.
 
-Git flow takes care of things like removal of branches when they're no longer needed and tagging the code every time you make a new release.
+Git flow takes care of things like removal of local branches when they're no longer needed and tagging the code every time you make a new release.
 
 
 Commit Often
@@ -56,6 +58,3 @@ Don't Check In Passwords!
 ------------------------
 
 We'll come back on to [security](/pages/security.html) later but for now just know that you shouldn't commit anything that should be considered secret.  That includes passwords, api keys and anything else that might be sensitive information.  It's not good enough to remove secrets after the fact either - git is designed to keep all changes historically and it's very difficult in practise to remove secrets from past commits.
-
-
-
