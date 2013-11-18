@@ -74,7 +74,11 @@ We use git-flow to manage our versioning. [Find out more about how we use git fl
 
 Add your initials to the feature name so we know who started it off.  For example:
 
+    # Git flow plugin:
     $ git flow feature start sm/indexing-awesomeness
+
+    # Plain old git:
+    $ git checkout -b feature/sm/indexing-awesomeness develop
 
 ### 5. Start working away
 
@@ -100,13 +104,13 @@ Your code should now be reviewed by another developer via a GitHub pull request.
 
         # Squash commits into as few as possible (rule of thumb: <5)
         # Example squash & rebase:
+        $ git checkout develop
         $ git pull origin develop
-        $ git checkout feature/sm/indexing-awesomeness
-        $ rebase -i develop
+        $ git rebase -i develop feature/sm/indexing-awesomeness
 
 2.  Create a GitHub pull-request
 
-    Now either [set up the pull request through GitHub](https://help.github.com/articles/using-pull-requests) or if you have the 'hub' command:
+    Now either [set up the pull request through GitHub](https://help.github.com/articles/using-pull-requests) or if you have the 'hub' command (which comes with our boxen setup):
 
         $ hub pull-request -b develop -h feature/sm/indexing-awesomeness
 
@@ -144,10 +148,10 @@ Once the code has been okayed the reviewer can close the pull request.
 - **Rebase** against the latest develop branch
 - **Merge** to develop (no fast-forward)
 
+        # Git flow plugin:
         $ git flow feature finish sm/indexing-awesomeness
 
-        # or
-
+        # Plain old git:
         $ git checkout develop
         $ git merge --no-ff feature/sm/indexing-awesomeness
 
