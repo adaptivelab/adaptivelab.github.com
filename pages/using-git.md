@@ -37,7 +37,7 @@ Happily code away and then merge it back into develop once it's done:
 
 > Don't forget to push your develop branch up to github, to help resolve any conflicts your code might have with others working on the same repo.
 
-Git flow takes care of things like removal of branches when they're no longer needed and tagging the code every time you make a new release.
+Git flow takes care of things like removal of local branches when they're no longer needed and tagging the code every time you make a new release.
 
 
 Commit Often
@@ -58,84 +58,3 @@ Don't Check In Passwords!
 ------------------------
 
 We'll come back on to [security](/pages/security.html) later but for now just know that you shouldn't commit anything that should be considered secret.  That includes passwords, api keys and anything else that might be sensitive information.  It's not good enough to remove secrets after the fact either - git is designed to keep all changes historically and it's very difficult in practise to remove secrets from past commits.
-
-
-Collaboration process
----------------------
-
-*Approach to coding in teams*
-
-**Product manager** - The person that manages the product  
-**Author** - The person that wrote the code  
-**Reviewer** - The person that reviews the pull-request
-
-### 1. Starting a new feature
-
-New tasks should be developed on a new feature branch (and please break them
-up onto several if you can).
-
-- Feature branch names start with `feature`
-- Branch names should be infixed with your initials e.g. `feature/sm/indexing-awesomeness`
-- Features should be small, ideally only affecting a few files (rule of thumb: &lt;5)
-- Commits should be smaller
-- Push up to the *remote* regularly (in case someone else needs to take over)
-
-### 2. Getting sign-off
-
-Your work should be signed off by the product manager before making a pull request. Either deploy to a demo environment or let them see it on your machine.
-
-### 3. Making a pull request
-
-Your code should be reviewed by anothe developer via a pull request. This helps to improve the overall quality of our code.
-
-- **Squash & Rebase** against the latest `develop` branch
-
-        # Squash commits into as few as possible (rule of thumb: <5)
-        # Example squash & rebase:
-        $ git checkout feature/sm/indexing-awesomeness
-        $ rebase -i develop
-
-- **Create a pull-request**, where possible, use the relevant user story for the title, and include a URL
-
-        # If you have `hub`
-        $ hub pull-request -b develop -h feature/sm/indexing-awesomeness
-
-- **Assign it to someone**, this can be someone on your team or anyone else in the company.
-
-### 4. Doing the code review
-
-Now the code will get reviewed, and you might want to make changes based on the feedback.
-
-**Reviewer to:**
-
-- Make sure there are enough tests
-- Make sure the tests pass
-- Make sure the code is as easy to understand as is possible
-
-**Author to:**
-
-- Respond to feedback and/or update code
-- Push updates to the *remote*
-
-### 5. Closing the pull request and finishing the feature
-
-Once the code has been okayed the reviewer can close the pull request.
-
-**Reviewer to:**
-
-- **Rebase** against the latest develop branch
-- **Merge** to develop (no fast-forward)
-
-        $ git flow feature finish sm/indexing-awesomeness
-        
-        # or
-        
-        $ git checkout develop
-        $ git merge --no-ff feature/sm/indexing-awesomeness
-
-- **Push** `develop` to remote
-- **Close** the *pull request* in github.
-- **Delete** the *remote* feature branch
-
-        $ git push origin :feature/sm/indexing-awesomeness
-

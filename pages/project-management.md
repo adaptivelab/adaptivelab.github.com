@@ -72,31 +72,98 @@ Talk through the technical approach with others in the team.  Even if you think 
 
 We use git-flow to manage our versioning. [Find out more about how we use git flow](/pages/using-git.html)
 
+Add your initials to the feature name so we know who started it off.  For example:
+
+    $ git flow feature start sm/indexing-awesomeness
+
 ### 5. Start working away
 
-Hack away to your heart's content. (After you created automated tests that prove it all works, of course.) When you think the feature's done, keep it in its branch for now while you do the following checks.
+Hack away to your heart's content. (After you created automated tests that prove it all works, of course.)
+
+- Features should be small, ideally only affecting a few files (rule of thumb: &lt;5)
+- Commits should be smaller
+- Push up to the *remote* regularly (in case someone else needs to take over)
+
+When you think the feature's done, keep it in its branch for now while you do the following checks.
 
 ### 6. Get the task signed off
 
-Move the Asana story to "waiting for sign off" and move the card on the Kanban board to this heading too. Then get the Product Owner to take a look at a working example so they can give you the thumbs up. They might need to check with other people before signing off (like a client); it's their responsibility to do this and let you know when the feature is signed off.  The working example can be given on your local development machine, theirs perhaps, or a demo server running on Heroku or EC2.  Whatever fits best with the feature in question and the circumstances. 
+Move the Asana story to "waiting for sign off" and move the card on the Kanban board to this heading too. Then get the Product Owner to take a look at a working example so they can give you the thumbs up. They might need to check with other people before signing off (like a client); it's their responsibility to do this and let you know when the feature is signed off.  The working example can be given on your local development machine, theirs perhaps, or a demo server running on Heroku or EC2.  Whatever fits best with the feature in question and the circumstances.
 
 ### 7. Get your work code reviewed
 
-Snag a nearby colleague who has some sort of understanding of the code you've just produced so that they can go over it from a coder's point of view and pass you helpful suggestions or point out important details you may have missed.  A handy way to do this is to get them to look at a pull request via Github, as it enables them add comments inline that get recorded for posterity.  Just as valid a way is to take them through your additions yourself.  Listen to their comments.  Don't be defensive - they're only talking frankly about good coding practices!  Also, don't forget you'll be giving your opinions on their code shortly too.
+Your code should now be reviewed by another developer via a GitHub pull request.  This helps to improve the overall quality of our code.  Listen to their comments.  Don't be defensive &ndash; they're only talking frankly about good coding practices!  Also, don't forget you'll be giving your opinions on their code shortly too.
 
-### 8. Check it's ok to deploy to production immediately
+1.  Squash & Rebase your feature against the latest develop branch
+
+        # Squash commits into as few as possible (rule of thumb: <5)
+        # Example squash & rebase:
+        $ git pull origin develop
+        $ git checkout feature/sm/indexing-awesomeness
+        $ rebase -i develop
+
+2.  Create a GitHub pull-request
+
+    Now either [set up the pull request through GitHub](https://help.github.com/articles/using-pull-requests) or if you have the 'hub' command:
+
+        $ hub pull-request -b develop -h feature/sm/indexing-awesomeness
+
+    Where possible add the relevant user story for the title, and include a link to all the details relating to that story or specific task.
+
+    _Make sure the comparison is against the develop branch, not the master_
+
+
+3.  Assign it to someone
+
+    This can be someone working on the same project, or another developer who could understand the code and provide you with useful feedback.
+
+
+### 8. The Code Review
+
+Now the code will get reviewed, and you might want to make changes based on the feedback.
+
+**Reviewer to:**
+
+- Make sure there are enough tests
+- Make sure the tests pass
+- Make sure the code is as easy to understand as is possible
+
+**Author to:**
+
+- Respond to feedback and/or update code
+- Push updates to the *remote*.  The pull request automatically updates with the changes.
+
+### 9. Closing the pull request and finishing the feature
+
+Once the code has been okayed the reviewer can close the pull request.
+
+**Reviewer to:**
+
+- **Rebase** against the latest develop branch
+- **Merge** to develop (no fast-forward)
+
+        $ git flow feature finish sm/indexing-awesomeness
+
+        # or
+
+        $ git checkout develop
+        $ git merge --no-ff feature/sm/indexing-awesomeness
+
+- **Push** `develop` to remote
+- **Close** the *pull request* in github
+- **Delete** the *remote* feature branch
+
+        $ git push origin :feature/sm/indexing-awesomeness
+
+- Move the Asana story to "waiting for deploy" and move the card on the Kanban board to the "waiting for deploy" section, so everyone can easily see which tasks are sitting in develop, ready for deployment.
+
+### 10. Check whether it's ok to deploy to production immediately
 
 Even after being signed off and code-reviewed, your feature might not be ok to be deployed to production. Ideally, every story in the iteration should be able to be deployed as soon as it's signed off; waiting at this stage can cause all sorts of nasty problems when you try to merge and deploy.
 
 If it looks like you'll need this delay for a particular feature, use your best judgement and discuss with the team what to do. You might build that feature so it's backwards compatible; you might start with a task to build a demo version of that feature on a demo branch, then once that's been signed off have another task to make the live version. Or other options.
 
-### 9. Finish feature and merge into develop
-
-Once you've got an ok from the last three steps, you get to use git-flow again to finish off the feature branch, merging it back into develop and deleting it locally as it's no longer needed.  Try not to forget to delete the remote version too, if you happened to create one.  Git flow won't do that for you.
-
-Move the Asana story to "waiting for deploy" and move the card on the Kanban board to the "waiting for deploy" section, so everyone can easily see which tasks are sitting in develop, ready for deployment.
-
-### 10. Deploy
+### 11. Deploy
 
 [Find out how we do deployment](/pages/release-and-deployment.html)
 
