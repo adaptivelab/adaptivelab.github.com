@@ -43,3 +43,6 @@ By hosting this document on github, we can facilitate changes and improvements o
 
 1. [Freelancer's Guide to Working with Us](pages/freelancers-guide.html) -
   How we like to work with freelancers.
+
+1. [Python Style Guidelines](pages/python-style-guides.html) -
+  How we write beautiful python code.

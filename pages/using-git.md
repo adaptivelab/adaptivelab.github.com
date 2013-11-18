@@ -19,28 +19,19 @@ We use [git flow](https://github.com/nvie/gitflow) for managing our branches.  I
 Here's a quick example of how to work on a new feature of a new project using git flow:
 
 Clone the repo:
-
-```
-$ git clone git@github.com:adaptivelab/adaptivelab.github.com.git
-```
+    $ git clone git@github.com:adaptivelab/adaptivelab.github.com.git
 
 Initialize git flow, accepting all the defaults:
 
-```
-$ git flow init
-```
+    $ git flow init
 
 Start work on your feature:
 
-```
-$ git flow feature start some_awesome_addition
-```
+    $ git flow feature start some_awesome_addition
 
 Happily code away and then merge it back into develop once it's done:
 
-```
-$ git flow feature finish some_awesome_addition
-```
+    $ git flow feature finish some_awesome_addition
 
 > Don't forget to push your develop branch up to github, to help resolve any conflicts your code might have with others working on the same repo.
 
