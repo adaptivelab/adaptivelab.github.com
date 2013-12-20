@@ -49,7 +49,7 @@ Your way of working
         <li>track your progress in Asana in the same way as the rest of the team</li>
         <li>get your stories signed off</li>
         <li>if you’re a developer, do code reviews for every non-trivial feature</li>
-        <li>give us daily updates via an in-person stand-up, or over Skype, or via email/[IDoneThis](https://idonethis.com/)</li>
+        <li>give us daily updates via an in-person stand-up, or over Skype, or via email/<a href="https://idonethis.com">IDoneThis</a></li>
     </ul>
 
 * If you're a developer: use Git and [GitFlow](http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/), and commit regularly with useful commit messages. [Here’s more information on how we use Git](/pages/using-git.html).
