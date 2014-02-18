@@ -20,5 +20,5 @@ Open Source Stuff!
 
 If you've got a piece of self-contained, useful code, why not package it up into a library and release it as open source via your favourite open source channel?  You can easily create a new public repository to house it, you can test the bejeesus out of it over time so you know that wherever you stick it it's just going to work and you never know - a stranger might come along one day and send you a pull request that makes it even better!
 
-Sure, it will take a little while getting use to packaging it up the first couple of times, but the more often you do it, the easier it will become.  The first time you'll have done all the hard work, including choosing the right licensing agreement to suit, so that the subsequent times will be a breeze.
+Sure, it will take a little while getting used to packaging it up the first couple of times, but the more often you do it, the easier it will become.  The first time you'll have done all the hard work, including choosing the right licensing agreement to suit, so that the subsequent times will be a breeze.
 
