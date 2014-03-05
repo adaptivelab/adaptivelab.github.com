@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Reusability"
-description: ""
 ---
 {% include JB/setup %}
 

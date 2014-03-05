@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Python Style Guidelines"
-description: ""
 ---
 
 {% include JB/setup %}

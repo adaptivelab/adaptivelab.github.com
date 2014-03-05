@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Security"
-description: ""
 ---
 {% include JB/setup %}
 
@@ -58,9 +57,4 @@ Services like [Passpack](https://www.passpack.com/) and [1Password](https://agil
 
 When the sad day arrives that someone leaves, it's a good idea to go through a checklist of tasks related to relinquishing access to all company-related accounts and services.  Something similar gets carried out at the end of individual projects, following that policy of least privilege.
 
-
-
-
-
-
-
+Puppet similarly controls configuration centrally, effectively relinquishing the required secret information to the nodes that need it, through a system of authentication.  There's still a need to have a backup of that secret information somewhere, in the event that the centrally managed store of info goes down and it needs to be reset.
