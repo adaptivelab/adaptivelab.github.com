@@ -1,3 +1,6 @@
+---
+custom_body_class: culture
+---
 <!DOCTYPE html>
 <!--
    ____
@@ -20,7 +23,7 @@
 
     <title>Adaptive Lab | Helping big companies act like small ones</title>
     <link href='https://www.adaptivelab.com/assets/favicon.png' rel='icon' type='image/png'>
-    <link href="https://s3-eu-west-1.amazonaws.com/adaptivelab-old-css/application.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="http://www.adaptivelab.com/assets/application.css" media="all" rel="stylesheet" type="text/css" />
     <script src="//maps.googleapis.com/maps/api/js?sensor=false&amp;key=AIzaSyCEkUxHIT3SDRUfIQIXOExhwp6rdrbHP-g" type="text/javascript"></script>
     <script src="https://www.adaptivelab.com/assets/application.js" type="text/javascript"></script>
     <!--[if IE]>
@@ -36,47 +39,41 @@
       <header>
         <section>
           <div class='adaptive-lab'>
-            <a href='/'>
-              <img alt='Adaptive Lab' src='http://www.adaptivelab.com/assets/adaptive-lab-symbol.png'/>
+            <a href='http://www.adaptivelab.com/'>
+              <img alt='Adaptive Lab' src='https://s3-eu-west-1.amazonaws.com/adaptivelab-blog-images/assets/adaptive-lab-symbol.png'>
               <span>Adaptive Lab</span>
             </a>
           </div>
           <nav>
             <ul>
               <li class='first'>
-                <a class="{% if page.custom_body_class == 'work' %}active{% endif %}" href='http://www.adaptivelab.com//work'>
+                <a class="{% if page.custom_body_class == 'work' %}active{% endif %}" href='http://adaptivelab.com/work'>
                   <div class='label'>Work</div>
-                  <div class='description'>Work we've done</div>
                 </a>
               </li>
               <li>
-                <a href='/#services'>
+                <a class="{% if page.custom_body_class == 'services' %}active{% endif %}" href='http://adaptivelab.com/services'>
                   <div class='label'>Services</div>
-                  <div class='description'>How we help you</div>
                 </a>
               </li>
               <li>
-                <a class="{% if page.custom_body_class == 'culture' %}active{% endif %}" href='http://www.adaptivelab.com//culture/handbook'>
+                <a class="{% if page.custom_body_class == 'culture' %}active{% endif %}" href='http://adaptivelab.com/culture/people'>
                   <div class='label'>Culture</div>
-                  <div class='description'>How we work together</div>
                 </a>
               </li>
               <li>
-                <a class="{% if page.custom_body_class == 'blog' %}active{% endif %}" href='http://www.adaptivelab.com//blog'>
+                <a class="{% if page.custom_body_class == 'blog' %}active{% endif %}" href='http://adaptivelab.com/blog'>
                   <div class='label'>Blog</div>
-                  <div class='description'>What we think</div>
                 </a>
               </li>
               <li>
-                <a class="{% if page.custom_body_class == 'contact' %}active{% endif %}" href='http://www.adaptivelab.com//contact'>
+                <a class="{% if page.custom_body_class == 'contact' %}active{% endif %}" href='http://adaptivelab.com/contact'>
                   <div class='label'>Contact</div>
-                  <div class='description'>How to get to us</div>
                 </a>
               </li>
               <li>
-                <a class="{% if page.custom_body_class == 'jobs' %}active{% endif %}" href='http://www.adaptivelab.com//jobs'>
+                <a class="{% if page.custom_body_class == 'jobs' %}active{% endif %}" href='http://adaptivelab.com/jobs'>
                   <div class='label'>Jobs</div>
-                  <div class='description'>Join us!</div>
                 </a>
               </li>
             </ul>
@@ -86,39 +83,67 @@
       </header>
       {{ content }}
       <footer class='mega'>
-  <section>
-    <div class='cards simple'>
-      <div class='pair first'>
-        <div class='card social twitter first'>
-          <a href='https://twitter.com/adaptivelab' target='_blank'><span class="social"></span>@adaptivelab</a>
-        </div>
-        <div class='card social email'>
-          <a href='mailto:hey@adaptivelab.com'><span class="pictogram">📥</span>Email us</a>
-        </div>
-      </div>
-      <div class='pair'>
-        <div class='card social github first'>
-          <a href='https://github.com/adaptivelab' target='_blank'><span class="social"></span>Read our code</a>
-        </div>
-        <div class='card social phone'>
-          <a href='tel:02030110640'><span class="pictogram">📱</span>020 3011 0640</a>
-        </div>
-      </div>
-      <div class='pair last'>
-        <div class='card social linkedin first'>
-          <a href='https://www.linkedin.com/company/adaptivelab' target='_blank'><span class="social"></span>Find us on LinkedIn</a>
-        </div>
-        <div class='card social map'>
-          <a href='https://maps.google.co.uk/maps?q=EC2A+3HZ&amp;hl=en&amp;sll=51.525013,-0.082762&amp;sspn=0.006902,0.006212&amp;hnear=London+EC2A+3HZ,+United+Kingdom&amp;t=m&amp;z=16' target='_blank'><span class="pictogram"></span>Find us on a map</a>
-        </div>
-      </div>
-    </div>
-    <div class='adaptive-lab center'>
-      &copy; Adaptive Lab 2013
-    </div>
-  </section>
-</footer>
-      <script type='text/javascript'>
+        <section class='image-block'>
+          <div class='image-overlay arrow top'>
+            <img alt='footer arrow' src='https://s3-eu-west-1.amazonaws.com/adaptivelab-blog-images/case-study/footer-arrow.png'>
+          </div>
+        </section>
+        <section>
+          <div class='newsletter_sign_up_form'>
+            <h2>Wunderkammer</h2>
+            <small>A fortnightly email of internetty goodness curated by our team.</small>
+            <form action='http://adaptivelab.us7.list-manage.com/subscribe/post?u=ba4bd34288db889e5ee0ae1aa&amp;amp;id=2aaa756163' method='post' target='_blank'>
+              <input name='EMAIL' placeholder='Email' type='email' value=''>
+              <input name='subscribe' type='submit' value='Sign Up'>
+            </form>
+          </div>
+          <div class='columns wide'>
+            <div class='column narrow center last'>
+              <p class='right adaptive-lab'>
+                <a href='http://www.adaptivelab.com/'>
+                  <img alt='Adaptive Lab' src='https://s3-eu-west-1.amazonaws.com/adaptivelab-blog-images/assets/adaptive-lab-symbol.png'>
+                  <span>Adaptive Lab</span>
+                </a>
+              </p>
+            </div>
+            <div class='column narrow first'>
+              <div class='contact'>
+                <p>
+                  <li>Second Floor</li>
+                  <li>91-93 Great Eastern Street</li>
+                  <li>London</li>
+                  <li>EC2A 3HZ</li>
+                </p>
+                <p>
+                  <li>020 3011 0640</li>
+                  <li>
+                    <a href='mailto:hey@adaptivelab.co.uk'>hey@adaptivelab.com</a>
+                  </li>
+                </p>
+              </div>
+            </div>
+            <div class='column narrow'>
+              <div class='social'>
+                <li>
+                  <div class='twitter'>
+                    <a href='https://twitter.com/adaptivelab' target='_blank'>@adaptivelab</a>
+                  </div>
+                </li>
+                <li>
+                  <div class='github'>
+                    <a href='https://github.com/adaptivelab' target='_blank'>adaptivelab</a>
+                  </div>
+                </li>
+                <li>
+                  <div class='methodology'>
+                    <a href='http://adaptivelab.github.io/' target='_blank'>Our development methodology</a>
+                  </div>
+                </li>
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>      <script type='text/javascript'>
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-10931211-1']);
         _gaq.push(['_trackPageview']);
