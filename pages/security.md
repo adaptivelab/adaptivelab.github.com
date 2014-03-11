@@ -58,9 +58,19 @@ Services like [Passpack](https://www.passpack.com/) and [1Password](https://agil
 
 When the sad day arrives that someone leaves, it's a good idea to go through a checklist of tasks related to relinquishing access to all company-related accounts and services.  Something similar gets carried out at the end of individual projects, following that policy of least privilege.
 
-
-
-
-
-
-
+<div class="dotted-rule">
+</div>
+<section class='text-block'>
+  <div class='footer'>
+    <a href='/contact'>
+      <div class='caption'>
+        Want to know more?
+      </div>
+      <h2>
+        Get in touch
+        <div class='forward-arrow'>
+        </div>
+      </h2>
+    </a>
+  </div>
+</section>

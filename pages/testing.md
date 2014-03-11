@@ -62,7 +62,19 @@ TODO: Explain how to add to the jenkins templates
 
 For big features, it can help for Jenkins to track the feature branch and show the status of all its tests.  It's easy to do and provides visibility to everyone immediately.
 
-
-
-
-
+<div class="dotted-rule">
+</div>
+<section class='text-block'>
+  <div class='footer'>
+    <a href='/contact'>
+      <div class='caption'>
+        Want to know more?
+      </div>
+      <h2>
+        Get in touch
+        <div class='forward-arrow'>
+        </div>
+      </h2>
+    </a>
+  </div>
+</section>

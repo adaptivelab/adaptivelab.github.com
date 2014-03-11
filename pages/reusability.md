@@ -22,3 +22,19 @@ If you've got a piece of self-contained, useful code, why not package it up into
 
 Sure, it will take a little while getting used to packaging it up the first couple of times, but the more often you do it, the easier it will become.  The first time you'll have done all the hard work, including choosing the right licensing agreement to suit, so that the subsequent times will be a breeze.
 
+<div class="dotted-rule">
+</div>
+<section class='text-block'>
+  <div class='footer'>
+    <a href='/contact'>
+      <div class='caption'>
+        Want to know more?
+      </div>
+      <h2>
+        Get in touch
+        <div class='forward-arrow'>
+        </div>
+      </h2>
+    </a>
+  </div>
+</section>

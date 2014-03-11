@@ -46,3 +46,20 @@ By hosting this document on github, we can facilitate changes and improvements o
 
 1. [Python Style Guidelines](pages/python-style-guides.html) -
   How we write beautiful python code.
+
+<div class="dotted-rule">
+</div>
+<section class='text-block'>
+  <div class='footer'>
+    <a href='/contact'>
+      <div class='caption'>
+        Want to know more?
+      </div>
+      <h2>
+        Get in touch
+        <div class='forward-arrow'>
+        </div>
+      </h2>
+    </a>
+  </div>
+</section>

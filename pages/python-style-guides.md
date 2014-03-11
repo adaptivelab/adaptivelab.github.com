@@ -197,3 +197,20 @@ This particular PEP is regarding always setting file encodings at the top of fil
 
     def foo():
         pass
+
+<div class="dotted-rule">
+</div>
+<section class='text-block'>
+  <div class='footer'>
+    <a href='/contact'>
+      <div class='caption'>
+        Want to know more?
+      </div>
+      <h2>
+        Get in touch
+        <div class='forward-arrow'>
+        </div>
+      </h2>
+    </a>
+  </div>
+</section>

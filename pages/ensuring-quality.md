@@ -58,4 +58,19 @@ Release
 Everything that has been signed-off since the last release is brought into the master branch and deployed into a staging (pre-production) environment.  This allows everyone to see all the new features working together in a production-like environment before a final QA assessment means that deployment to production can go ahead.  Releases are scheduled during sprint planning.  They are not scheduled for Friday afternoons or for other awkward times!
 
 
-
+<div class="dotted-rule">
+</div>
+<section class='text-block'>
+  <div class='footer'>
+    <a href='/contact'>
+      <div class='caption'>
+        Want to know more?
+      </div>
+      <h2>
+        Get in touch
+        <div class='forward-arrow'>
+        </div>
+      </h2>
+    </a>
+  </div>
+</section>

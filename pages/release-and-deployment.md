@@ -90,3 +90,20 @@ The Release Checklist
 1. The tests are all green.
 1. The release has been created.
 1. The release has been tested in the staging environment.
+
+<div class="dotted-rule">
+</div>
+<section class='text-block'>
+  <div class='footer'>
+    <a href='/contact'>
+      <div class='caption'>
+        Want to know more?
+      </div>
+      <h2>
+        Get in touch
+        <div class='forward-arrow'>
+        </div>
+      </h2>
+    </a>
+  </div>
+</section>

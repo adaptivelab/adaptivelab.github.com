@@ -28,3 +28,19 @@ There are no stupid questions!
 
 When given a new challenge to solve and there are bits you're not clear on and are uncertain of, then pipe up early.  No one's going to mock you for anything you might ask.  Some people know some things; other people know other things.  No one knows everything, especially when you're dealing with domain-specific tasks that come with a history and a language created before you even came to work on it.
 
+<div class="dotted-rule">
+</div>
+<section class='text-block'>
+  <div class='footer'>
+    <a href='/contact'>
+      <div class='caption'>
+        Want to know more?
+      </div>
+      <h2>
+        Get in touch
+        <div class='forward-arrow'>
+        </div>
+      </h2>
+    </a>
+  </div>
+</section>

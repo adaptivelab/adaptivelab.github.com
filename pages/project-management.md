@@ -200,3 +200,20 @@ The provisioning steps will grow as dependencies and configuration gets added to
 Once you've set it up right, if you add a '#' and then the number of an Asana task ID to one of your git commits, when pushed up to github Asana will add a commit message into your task.  Handy!
 
 <!-- TODO: How to set it up right. -->
+
+<div class="dotted-rule">
+</div>
+<section class='text-block'>
+  <div class='footer'>
+    <a href='/contact'>
+      <div class='caption'>
+        Want to know more?
+      </div>
+      <h2>
+        Get in touch
+        <div class='forward-arrow'>
+        </div>
+      </h2>
+    </a>
+  </div>
+</section>

@@ -50,4 +50,19 @@ Logging is a boring necessity that you'll regret if you don't get it right early
 
 If your app is set up to log to the standard output streams then you can decide where to redirect that to at a later date, rather than hard-code in a particular logfile name and location.
 
-
+<div class="dotted-rule">
+</div>
+<section class='text-block'>
+  <div class='footer'>
+    <a href='/contact'>
+      <div class='caption'>
+        Want to know more?
+      </div>
+      <h2>
+        Get in touch
+        <div class='forward-arrow'>
+        </div>
+      </h2>
+    </a>
+  </div>
+</section>

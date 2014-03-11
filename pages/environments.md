@@ -45,4 +45,19 @@ The staging environment should hold data that's as close as possible to the prod
 
 The live system.  It should have minimal logging information (enough so that you have a view on what's going on and what's going wrong) and everything turned on (caching, third party APIs).
 
-
+<div class="dotted-rule">
+</div>
+<section class='text-block'>
+  <div class='footer'>
+    <a href='/contact'>
+      <div class='caption'>
+        Want to know more?
+      </div>
+      <h2>
+        Get in touch
+        <div class='forward-arrow'>
+        </div>
+      </h2>
+    </a>
+  </div>
+</section>

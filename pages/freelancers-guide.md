@@ -68,3 +68,20 @@ When & where
 * We also need to know roughly how many hours you’ll be working in your normal working day/week (and when you’re working many more or fewer hours than normal), so we can budget accurately.
 * We may want to agree a few ‘core hours’ where both us and you are at work and contactable.
 * We prefer you to be co-located with us, or at least come to our office for project kick-offs. We have a nice office, with plenty of space, wifi and nice people to have a beer with on Friday. If co-location isn’t possible, we can work around it, but this may factor in to our decision over whether to work with you or someone else.
+
+<div class="dotted-rule">
+</div>
+<section class='text-block'>
+  <div class='footer'>
+    <a href='/contact'>
+      <div class='caption'>
+        Want to know more?
+      </div>
+      <h2>
+        Get in touch
+        <div class='forward-arrow'>
+        </div>
+      </h2>
+    </a>
+  </div>
+</section>
