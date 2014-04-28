@@ -1,159 +1,176 @@
----
-custom_body_class: methodology
----
 <!DOCTYPE html>
 <!--
-   ____
-  (.   \
-    \  |
-     \ |___(\--/)
-   __/    (  . . )
-  "'._.    '-.O.'
-       '-.  \ "|\
-          '.,,/'.,,mrf
-    _   __   _   ___ ___  _  _ _  ___  _     _   ___
-   / \ |  \ / \ | o \_ _|| || | || __|| |   / \ | o )
-  | o || o ) o ||  _/| | | || V || _| | |_ | o || o \
-  |_n_||__/|_n_||_|  |_| |_| \_/ |___||___||_n_||___/
+                  ._
+              .-'  `-.
+           .-'        \
+          ;    .-'\    ;
+          `._.'    ;   |
+                   |   |
+                   ;   :
+                  ;   :
+                  ;   :
+                 /   /
+                ;   :                   ,
+                ;   |               .-"7|
+              .-'"  :            .-' .' :
+           .-'       \         .'  .'   `.
+         .'           `-. ""-.-'`""    `",`-._..--"7
+         ;    .          `-.J `-,    ;"`.;|,_,    ;
+       _.'    |         `"" `. ."""--. o \:.-. _.'
+    .""       :            ,--`;   ,  `--/}o,' ;
+    ;   .___.'        /     ,--.`-. `-..7_.-  /_
+     \   :   `..__.._;    .'__;    `---..__.-'-.`"-,
+     .'   `--. |   \_;    \'   `-._.-")     \\  `-,
+     `.   -.`_):      `.   `-"""`.   ;__.' ;/ ;   "
+       `-.__7"  `-..._.'`7     -._;'  ``"-''
+                         `--.,__.'  _   __   _   ___ ___  _  _ _  ___  _     _   ___
+                                   / \ |  \ / \ | o \_ _|| || | || __|| |   / \ | o )
+                                  | o || o ) o ||  _/| | | || V || _| | |_ | o || o \
+                                  |_n_||__/|_n_||_|  |_| |_| \_/ |___||___||_n_||___/
 -->
-<html class='no-js page-{{ page.custom_body_class }}'>
-  <head>
-    <meta charset='utf-8'>
-    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
 
-    <title>Adaptive Lab | {%if page.title %}{{page.title}}{% else %}Helping big companies act like small ones{% endif %}</title>
-    <link href='https://www.adaptivelab.com/assets/favicon.png' rel='icon' type='image/png'>
-    <link href="https://www.adaptivelab.com/assets/application.css" media="all" rel="stylesheet" type="text/css" />
-    <script src="//maps.googleapis.com/maps/api/js?sensor=false&amp;key=AIzaSyCEkUxHIT3SDRUfIQIXOExhwp6rdrbHP-g" type="text/javascript"></script>
-    <script src="https://www.adaptivelab.com/assets/application.js" type="text/javascript"></script>
-    <!--[if IE]>
-      <link href="https://www.adaptivelab.com/assets/css/ie.css" media="all" rel="stylesheet" type="text/css" />
-    <![endif]-->
-    <!--[if lt IE 9]>
-      <script src='https://www.adaptivelab.com/assets/libs/respond.min.js'></script>
-      <script src='https://www.adaptivelab.com/assets/libs/html5shiv.js'></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div id='container'>
-      <header>
-        <section>
-          <div class='adaptive-lab'>
-            <a href='http://www.adaptivelab.com/'>
-              <img alt='Adaptive Lab' src='https://s3-eu-west-1.amazonaws.com/adaptivelab-blog-images/assets/adaptive-lab-symbol.png'>
-              <span>Adaptive Lab</span>
-            </a>
-          </div>
-          <nav>
-            <ul>
-              <li class='first'>
-                <a class="{% if page.custom_body_class == 'work' %}active{% endif %}" href='http://adaptivelab.com/work'>
-                  <div class='label'>Work</div>
-                </a>
-              </li>
-              <li>
-                <a class="{% if page.custom_body_class == 'services' %}active{% endif %}" href='http://adaptivelab.com/services'>
-                  <div class='label'>Services</div>
-                </a>
-              </li>
-              <li>
-                <a class="{% if page.custom_body_class == 'culture' %}active{% endif %}" href='http://adaptivelab.com/culture/people'>
-                  <div class='label'>Culture</div>
-                </a>
-              </li>
-              <li>
-                <a class="{% if page.custom_body_class == 'blog' %}active{% endif %}" href='http://adaptivelab.com/blog'>
-                  <div class='label'>Blog</div>
-                </a>
-              </li>
-              <li>
-                <a class="{% if page.custom_body_class == 'contact' %}active{% endif %}" href='http://adaptivelab.com/contact'>
-                  <div class='label'>Contact</div>
-                </a>
-              </li>
-              <li>
-                <a class="{% if page.custom_body_class == 'jobs' %}active{% endif %}" href='http://adaptivelab.com/jobs'>
-                  <div class='label'>Jobs</div>
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div id='open-nav-button'></div>
-        </section>
-      </header>
-      {{ content }}
-      <footer class='mega'>
-        <section class='image-block'>
-          <div class='image-overlay arrow top'>
-            <img alt='footer arrow' src='https://s3-eu-west-1.amazonaws.com/adaptivelab-blog-images/case-study/footer-arrow.png'>
-          </div>
-        </section>
-        <section>
-          <div class='newsletter_sign_up_form'>
-            <h2>Wunderkammer</h2>
-            <small>A fortnightly email of internetty goodness curated by our team.</small>
-            <form action='http://adaptivelab.us7.list-manage.com/subscribe/post?u=ba4bd34288db889e5ee0ae1aa&amp;amp;id=2aaa756163' method='post' target='_blank'>
-              <input name='EMAIL' placeholder='Email' type='email' value=''>
-              <input name='subscribe' type='submit' value='Sign Up'>
-            </form>
-          </div>
-          <div class='columns wide'>
-            <div class='column narrow center last'>
-              <p class='right adaptive-lab'>
-                <a href='http://www.adaptivelab.com/'>
-                  <img alt='Adaptive Lab' src='https://s3-eu-west-1.amazonaws.com/adaptivelab-blog-images/assets/adaptive-lab-symbol.png'>
-                  <span>Adaptive Lab</span>
-                </a>
-              </p>
-            </div>
-            <div class='column narrow first'>
-              <div class='contact'>
-                <p>
-                  <li>Second Floor</li>
-                  <li>91-93 Great Eastern Street</li>
-                  <li>London</li>
-                  <li>EC2A 3HZ</li>
-                </p>
-                <p>
-                  <li>020 3011 0640</li>
-                  <li>
-                    <a href='mailto:hey@adaptivelab.co.uk'>hey@adaptivelab.com</a>
-                  </li>
-                </p>
-              </div>
-            </div>
-            <div class='column narrow'>
-              <div class='social'>
-                <li>
-                  <div class='twitter'>
-                    <a href='https://twitter.com/adaptivelab' target='_blank'>@adaptivelab</a>
-                  </div>
-                </li>
-                <li>
-                  <div class='github'>
-                    <a href='https://github.com/adaptivelab' target='_blank'>adaptivelab</a>
-                  </div>
-                </li>
-                <li>
-                  <div class='methodology'>
-                    <a href='http://adaptivelab.github.io/' target='_blank'>Our development methodology</a>
-                  </div>
-                </li>
-              </div>
-            </div>
-          </div>
-        </section>
-      </footer>
-      <script type='text/javascript'>
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-10931211-1']);
-        _gaq.push(['_trackPageview']);
-        (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-      </script>
-    </div>
-  </body>
+<html class='no-js page-{{ page.custom_body_class }}'>
+<head>
+<meta charset='utf-8'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+
+<title>Adaptive Lab | {%if page.title %}{{page.title}}{% else %}Helping big companies act like small ones{% endif %}</title>
+<link href='https://www.adaptivelab.com/assets/favicon.png' rel='icon' type='image/png'>
+<link href="https://www.adaptivelab.com/assets/application-87cf2c5275f004c6f7d06255ca02d9a0.css" media="all" rel="stylesheet" type="text/css" />
+<script src="https://www.adaptivelab.com/assets/application-0f6f7d924190028f2ebd6b215a95e012.js" type="text/javascript"></script>
+<!--[if IE]>
+<link href="https://www.adaptivelab.com/assets/css/ie.css" media="all" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if lt IE 9]>
+<script src='https://www.adaptivelab.com/assets/libs/respond.min.js'></script>
+<script src='https://www.adaptivelab.com/assets/libs/html5shiv.js'></script>
+<![endif]-->
+</head>
+<body>
+<div id='container'>
+<header>
+<section>
+<div class='nav-bar'></div>
+<nav id='main-nav'>
+<div class='mobile-nav-spacer'></div>
+<ul>
+<li class='first'>
+<a class="{% if page.custom_body_class == 'work' %}active{% endif %}" href='/work'>
+<div class='label'>Work</div>
+</a>
+</li>
+<li>
+<a class="{% if page.custom_body_class == 'services' %}active{% endif %}" href='/services'>
+<div class='label'>Services</div>
+</a>
+</li>
+<li>
+<a class="{% if page.custom_body_class == 'culture' %}active{% endif %}" href='/culture/people'>
+<div class='label'>Culture</div>
+</a>
+</li>
+<li>
+<a class="{% if page.custom_body_class == 'blog' %}active{% endif %}" href='/blog'>
+<div class='label'>Blog</div>
+</a>
+</li>
+<li>
+<a class="{% if page.custom_body_class == 'contact' %}active{% endif %}" href='/contact'>
+<div class='label'>Contact</div>
+</a>
+</li>
+<li>
+<a class="{% if page.custom_body_class == 'jobs' %}active{% endif %}" href='/jobs'>
+<div class='label'>Jobs</div>
+</a>
+</li>
+</ul>
+</nav>
+<div class='adaptive-lab-logo'>
+<a href='/'>
+<span>Adaptive Lab</span>
+</a>
+</div>
+<div id='open-nav-button'></div>
+</section>
+</header>
+<div class='clearfix'></div>
+
+{{ content }}
+<footer class='mega'>
+<section class='image-block'>
+<div class='image-overlay arrow top'>
+<img alt='footer arrow' src='https://s3-eu-west-1.amazonaws.com/adaptivelab-blog-images/case-study/footer-arrow.png'>
+</div>
+</section>
+<section>
+<div class='newsletter_sign_up_form'>
+<h2>Wunderkammer</h2>
+<small>A fortnightly email of internetty goodness curated by our team.</small>
+<form action='http://adaptivelab.us7.list-manage.com/subscribe/post?u=ba4bd34288db889e5ee0ae1aa&amp;amp;id=2aaa756163' method='post' target='_blank'>
+<input name='EMAIL' placeholder='Email' type='email' value=''>
+<input name='subscribe' type='submit' value='Sign Up'>
+</form>
+</div>
+
+<div class='columns wide'>
+<div class='column narrow center last'>
+<div class='adaptive-lab-logo'>
+<a href='/'>
+<span>Adaptive Lab</span>
+</a>
+</div>
+&nbsp;
+</div>
+<div class='column narrow first'>
+<div class='contact'>
+<p>
+<li>Second Floor</li>
+<li>91-93 Great Eastern Street</li>
+<li>London</li>
+<li>EC2A 3HZ</li>
+</p>
+<p>
+<li>020 3011 0640</li>
+<li>
+<a href='mailto:hey@adaptivelab.co.uk'>hey@adaptivelab.com</a>
+</li>
+</p>
+</div>
+</div>
+<div class='column narrow'>
+<div class='social'>
+<li>
+<div class='twitter'>
+<a href='https://twitter.com/adaptivelab' target='_blank'>@adaptivelab</a>
+</div>
+</li>
+<li>
+<div class='github'>
+<a href='https://github.com/adaptivelab' target='_blank'>adaptivelab</a>
+</div>
+</li>
+<li>
+<div class='methodology'>
+<a href='http://adaptivelab.github.io/' target='_blank'>Our development methodology</a>
+</div>
+</li>
+</div>
+</div>
+</div>
+</section>
+</footer>
+
+<script type='text/javascript'>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-10931211-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+</div>
+</body>
 </html>
