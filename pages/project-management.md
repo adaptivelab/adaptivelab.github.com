@@ -205,7 +205,7 @@ Once you've set it up right, if you add a '#' and then the number of an Asana ta
 </div>
 <section class='text-block'>
   <div class='footer'>
-    <a href='/contact'>
+    <a href='https://www.adaptivelab.com/contact'>
       <div class='caption'>
         Want to know more?
       </div>

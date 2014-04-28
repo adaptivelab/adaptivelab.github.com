@@ -63,7 +63,7 @@ We'll come back on to [security](/pages/security.html) later but for now just kn
 </div>
 <section class='text-block'>
   <div class='footer'>
-    <a href='/contact'>
+    <a href='https://www.adaptivelab.com/contact'>
       <div class='caption'>
         Want to know more?
       </div>

@@ -32,7 +32,7 @@ When given a new challenge to solve and there are bits you're not clear on and a
 </div>
 <section class='text-block'>
   <div class='footer'>
-    <a href='/contact'>
+    <a href='https://www.adaptivelab.com/contact'>
       <div class='caption'>
         Want to know more?
       </div>

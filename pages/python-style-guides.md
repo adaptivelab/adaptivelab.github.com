@@ -202,7 +202,7 @@ This particular PEP is regarding always setting file encodings at the top of fil
 </div>
 <section class='text-block'>
   <div class='footer'>
-    <a href='/contact'>
+    <a href='https://www.adaptivelab.com/contact'>
       <div class='caption'>
         Want to know more?
       </div>

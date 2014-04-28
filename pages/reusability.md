@@ -26,7 +26,7 @@ Sure, it will take a little while getting used to packaging it up the first coup
 </div>
 <section class='text-block'>
   <div class='footer'>
-    <a href='/contact'>
+    <a href='https://www.adaptivelab.com/contact'>
       <div class='caption'>
         Want to know more?
       </div>
