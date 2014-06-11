@@ -8,8 +8,9 @@ title: "Python Style Guidelines"
 <ol class="Ordered-list--wide">
     <li>
         <div class="Ordered-list--context Ordered-list--no-number">
-            <h2 class="List-item__heading">{{ page.title }}</h2>
-<div class="List-item__body List-item--no-indent" markdown="1">
+            <div>
+                <h2 class="List-item__heading">{{ page.title }}</h2>
+<div class="List-item__body" markdown="1">
 Python is unique in the fact it has a community approved style guide known as PEP8. This guide changes and evolves over time so do keep an eye on changes to it: ([http://www.python.org/dev/peps/pep-0008/](http://www.python.org/dev/peps/pep-0008/))
 
 The main bullet points of PEP8 are:
@@ -19,6 +20,7 @@ The main bullet points of PEP8 are:
 * Maximum line length should be 79 characters
 * Docstrings should be wrapped to 72 characters, but this isn't really enforced
 </div>
+            </div>
         </div>
     </li>
 </ol>

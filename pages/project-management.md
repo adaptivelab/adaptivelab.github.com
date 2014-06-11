@@ -7,7 +7,7 @@ description: ""
 
 <ol class="Ordered-list--wide">
     <li>
-        <div class="Ordered-list--context Ordered-list--no-number">
+        <div class="Ordered-list--context Ordered-list--manual-number">
             <span class="Ordered-list--number">2</span>
             <div>
                 <h2 class="List-item__heading">{{ page.title }}</h2>

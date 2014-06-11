@@ -97,13 +97,19 @@ html.page-methodology
                     min-height: 9rem
                     padding-left: 3rem
 
-                &.List-item--no-indent
-                    margin-left: 0
+            &.Ordered-list--no-number
+                > div
                     border-left: none
-                    padding-left: 0
+                    margin: 0
+                    padding: 0
 
-            &.Ordered-list--no-number:before
-                display: none
+                @media screen and (max-width: $wide) 
+                    > div
+                        margin-left: 25px
+
+            &.Ordered-list--no-number, &.Ordered-list--manual-number
+                &:before
+                    display: none
 
     .List-item__heading 
         margin: 0
