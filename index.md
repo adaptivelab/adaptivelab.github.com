@@ -133,11 +133,11 @@ title: Methodology
   </li>
 
   <li>
-    <a href="pages/python-style-guides.html" class="Ordered-list--context">
+    <a href="pages/style-guides.html" class="Ordered-list--context">
       <div>
         <h2 class="List-item__heading">Style Guides</h2>
         <p class="List-item__body">
-          How we write beautiful python code.
+          How we write beautiful code.
         </p>
       </div>
     </a>

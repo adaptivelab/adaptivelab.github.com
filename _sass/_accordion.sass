@@ -111,6 +111,10 @@ dd
     &:after
         color: $list-separator-grey
 
+.Accordion__element__link
+    @extend .Accordion__arrow--right
+
+
 .Accordion__arrow--down
     @extend .Accordion__arrow
     &:after
@@ -121,6 +125,11 @@ dd
     @extend .Accordion__arrow
     &:after
         content: "\E764"
+
+.Accordion__arrow--right
+    @extend .Accordion__arrow
+    &:after
+        content: "\E766" !important
 
 .Accordion__arrow
     &:after
