@@ -1,0 +1,129 @@
+dl
+    -webkit-margin-before: 0
+    -webkit-margin-after: 0
+
+dd
+    -webkit-margin-start: 0
+
+.Accordion
+    box-sizing: border-box
+
+.Accordion--top
+    @extend .Accordion
+    border-top: 1px solid $list-separator-grey
+    border-bottom: 1px solid $list-separator-grey
+
+    > .Accordion__element__title
+        padding: 0 25px
+        &.Accordion__toggle--open
+            padding: 0
+            margin: 0 25px
+            border-bottom: 1px solid $list-separator-grey
+
+    > .Accordion__element__title + .Accordion__element__content
+        border-bottom: 1px solid $list-separator-grey
+        &:last-child
+            border-bottom: none
+            margin-bottom: 1rem
+
+    > .Accordion__element__content, > .Accordion__element__content--nested
+        padding: 0 25px
+
+    .Accordion__element__title--direct-content
+        &.Accordion__toggle--open
+            border-bottom: 1px solid transparent
+
+    > .Accordion__toggle--closed
+        @extend .Accordion__toggle
+        @extend .Accordion__arrow--up
+
+        &:after
+            color: $darkish-gray
+
+    @media screen and (min-width: $standard)
+
+        > .Accordion__element__title
+            padding: 0 25%
+
+        > .Accordion__element__title.Accordion__toggle--open, > .Accordion__element__content, > .Accordion__element__content--nested
+            margin: 0 25%
+
+.Accordion--nested
+    @extend .Accordion
+    .Accordion__element__title
+        font-size: 25px
+        margin: 0 1rem
+        &.Accordion__toggle--open
+            border-bottom: 1px solid $list-separator-grey
+
+    .Accordion__element__content
+        padding: 0 1rem
+        margin-left: 1rem
+
+.Accordion__element__title
+    font-family: $sans-serif
+    text-transform: uppercase
+    font-size: 27px
+    font-weight: 600
+    line-height: 65px
+    padding-right: 50px
+    color: $darkish-gray
+    position: relative
+
+    &.Accordion__toggle--open
+        border-bottom: 1px solid transparent
+
+    &.Accordion__toggle--closed
+        border-bottom: 1px solid $list-separator-grey
+
+    &:last-of-type &.Accordion__toggle--closed
+        border-bottom: 1px solid transparent
+
+.Accordion__element__content
+    &:last-child
+        margin-bottom: 1rem
+
+.Accordion__toggle
+    cursor: pointer
+
+.Accordion__toggle--open
+    @extend .Accordion__toggle
+    @extend .Accordion__arrow--down
+
+.Accordion__toggle--closed
+    @extend .Accordion__toggle
+    @extend .Accordion__arrow--up
+
+    &:after
+        color: $list-separator-grey
+
+.Accordion__arrow--down
+    @extend .Accordion__arrow
+    &:after
+        content: "\E767"
+
+
+.Accordion__arrow--up
+    @extend .Accordion__arrow
+    &:after
+        content: "\E764"
+
+.Accordion__arrow
+    &:after
+        padding-right: 1rem
+        font-family: "Entypo"
+        font-size: 45px
+        font-weight: 100
+        position: absolute
+        top: 0
+        right: 0
+
+input[type=checkbox] + label
+    color: #ccc
+    font-style: italic
+
+input[type=checkbox]:checked + label
+    color: #f00
+    font-style: normal
+    dd
+        height: 0

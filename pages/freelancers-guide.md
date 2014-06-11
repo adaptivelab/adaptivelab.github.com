@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Working with Adaptive Lab for Fun and Profit"
-description: ""
 ---
 {% include JB/setup %}
 

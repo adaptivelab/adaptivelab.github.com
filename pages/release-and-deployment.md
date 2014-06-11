@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Release and Deployment"
-description: ""
 ---
 {% include JB/setup %}
 

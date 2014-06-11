@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Using Git"
-description: ""
 ---
 {% include JB/setup %}
 

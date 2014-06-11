@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Fearless Development"
-description: ""
 ---
 {% include JB/setup %}
 

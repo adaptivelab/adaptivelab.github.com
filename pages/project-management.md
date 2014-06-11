@@ -1,12 +1,222 @@
 ---
 layout: page
 title: "Project Management"
-description: ""
 ---
 {% include JB/setup %}
 
+<ol class="Ordered-list--wide">
+    <li>
+        <a>
+            <div>
+                <h2 class="List-item__heading">Project Management</h2>
+                <p class="List-item__body">
+                    We stick pretty firmly to the Agile SCRUM software development methodology. I won't go into great detail about what that means, but here's the way we work:
+                </p>
+            </div>
+        </a>
+    </li>
+</ol>
 
-We stick pretty firmly to the Agile SCRUM software development methodology.  I won't go into great detail about what that means, but here's the way we work:
+<dl class="Accordion--top">
+
+    <dt class="Accordion__element__title">Day to day process</dt>
+
+    <dd class="Accordion__element__content Accordion__element__content--nested">
+        <dl class="Accordion--nested">
+            <dt class="Accordion__element__title">Pick up a new task to work on</dt>
+            <dd class="Accordion__element__content">
+                <p>
+                    All the tasks we decided on in planning are kept in [Asana](https://app.asana.com/). Asana keeps a record of all the information about individual tasks, and also what people have been working on and what stage each task is at. We also use a [Kanban board](http://en.wikipedia.org/wiki/Kanban_board), because it gives a really helpful at-a-glance view of what's going on in the iteration.
+                </p>
+                <p>
+                    Tasks are listed in the relevant project in priority order. But do take a pragmatic approach to deciding what the next task you do is, depending on whether you're waiting for other tasks to get done beforehand.
+                </p>
+                <p>
+                    When you need something to do, just grab the next available task you can work on from the Asana that corresponds to the current sprint, by assigning it to yourself and moving it into the 'In Progress' part of the project.  While you're at it, move the corresponding card on the Kanban board along too.
+                </p>
+            </dd>
+
+            <dt class="Accordion__element__title">Talk to the product owner</dt>
+            <dd class="Accordion__element__content">
+                <p>
+                    Even if you think you know exactly what you're about to attempt when grabbing a new task off the pile, it's always a good idea to double-check with whoever created the task in the first place that you'll be delivering what's expected.
+                </p>
+            </dd>
+
+            <dt class="Accordion__element__title">Talk to the dev team</dt>
+            <dd class="Accordion__element__content">
+                <p>
+                    Talk through the technical approach with others in the team.  Even if you think there's a clear, simple method to take it's still worth double-checking with others as everyone has different experience and knowledge that may lead to something better or simpler.  Doing this also helps to ensure there's not some other work going on that would impact on your ability to carry out the task.
+                </p>
+            </dd>
+
+            <dt class="Accordion__element__title">Create a new feature branch in git flow</dt>
+            <dd class="Accordion__element__content">
+                <p>
+                    We use git-flow to manage our versioning. [Find out more about how we use git flow](/pages/using-git.html)
+
+                    Add your initials to the feature name so we know who started it off.  For example:
+
+                        # Git flow plugin:
+                        $ git flow feature start sm/indexing-awesomeness
+
+                        # Plain old git:
+                        $ git checkout -b feature/sm/indexing-awesomeness develop
+                </p>
+            </dd>
+
+            <dt class="Accordion__element__title">Start working away</dt>
+            <dd class="Accordion__element__content">
+                <p>
+                    Hack away to your heart's content. (After you created automated tests that prove it all works, of course.)
+
+                    - Features should be small, ideally only affecting a few files (rule of thumb: &lt;5)
+                    - Commits should be smaller
+                    - Push up to the *remote* regularly (in case someone else needs to take over)
+
+                    When you think the feature's done, keep it in its branch for now while you do the following checks.
+                </p>
+            </dd>
+
+            <dt class="Accordion__element__title">Get the task signed off</dt>
+            <dd class="Accordion__element__content">
+                <p>
+                    Move the Asana story to "waiting for sign off" and move the card on the Kanban board to this heading too. Then get the Product Owner to take a look at a working example so they can give you the thumbs up. They might need to check with other people before signing off (like a client); it's their responsibility to do this and let you know when the feature is signed off.  The working example can be given on your local development machine, theirs perhaps, or a demo server running on Heroku or EC2.  Whatever fits best with the feature in question and the circumstances.
+
+                    <a name="get-your-work-code-reviewed"> </a>
+                </p>
+            </dd>
+
+            <dt class="Accordion__element__title">Get your work code reviewed</dt>
+            <dd class="Accordion__element__content">
+                <p>
+                    Your code should now be reviewed by another developer via a GitHub pull request.  This helps to improve the overall quality of our code.  Listen to their comments.  Don't be defensive &ndash; they're only talking frankly about good coding practices!  Also, don't forget you'll be giving your opinions on their code shortly too.
+
+                    1.  Squash &amp; Rebase your feature against the latest develop branch
+
+                            # Squash commits into as few as possible (rule of thumb: &lt;5)
+                            # Example squash &amp; rebase:
+                            $ git checkout develop
+                            $ git pull origin develop
+                            $ git rebase -i develop feature/sm/indexing-awesomeness
+
+                    2.  Create a GitHub pull-request
+
+                        Now either [set up the pull request through GitHub](https://help.github.com/articles/using-pull-requests) or if you have the 'hub' command (which comes with our boxen setup):
+
+                            $ hub pull-request -b develop -h feature/sm/indexing-awesomeness
+
+                        Where possible add the relevant user story for the title, and include a link to all the details relating to that story or specific task.
+
+                        _Make sure the comparison is against the develop branch, not the master_
+
+
+                    3.  Assign it to someone
+
+                        This can be someone working on the same project, or another developer who could understand the code and provide you with useful feedback.
+                </p>
+            </dd>
+
+            <dt class="Accordion__element__title">The Code Review</dt>
+            <dd class="Accordion__element__content">
+                <p>
+                    Now the code will get reviewed, and you might want to make changes based on the feedback.
+
+                    **Reviewer to:**
+
+                    - Make sure there are enough tests
+                    - Make sure the tests pass
+                    - Make sure the code is as easy to understand as is possible
+
+                    **Author to:**
+
+                    - Respond to feedback and/or update code
+                    - Push updates to the *remote*.  The pull request automatically updates with the changes.
+                </p>
+            </dd>
+
+            <dt class="Accordion__element__title">Closing the pull request and finishing the feature</dt>
+            <dd class="Accordion__element__content">
+                <p>
+                    Once the code has been okayed the reviewer can close the pull request.
+
+                    **Reviewer to:**
+
+                    - **Rebase** against the latest develop branch
+                    - **Merge** to develop (no fast-forward)
+
+                            # Git flow plugin:
+                            $ git flow feature finish sm/indexing-awesomeness
+
+                            # Plain old git:
+                            $ git checkout develop
+                            $ git merge --no-ff feature/sm/indexing-awesomeness
+
+                    - **Push** `develop` to remote
+                    - **Close** the *pull request* in github
+                    - **Delete** the *remote* feature branch
+
+                            $ git push origin :feature/sm/indexing-awesomeness
+
+                    - Move the Asana story to "waiting for deploy" and move the card on the Kanban board to the "waiting for deploy" section, so everyone can easily see which tasks are sitting in develop, ready for deployment.
+                </p>
+            </dd>
+
+            <dt class="Accordion__element__title">Check whether it's ok to deploy to production immediately</dt>
+            <dd class="Accordion__element__content">
+                <p>
+                    Even after being signed off and code-reviewed, your feature might not be ok to be deployed to production. Ideally, every story in the iteration should be able to be deployed as soon as it's signed off; waiting at this stage can cause all sorts of nasty problems when you try to merge and deploy.
+
+                    If it looks like you'll need this delay for a particular feature, use your best judgement and discuss with the team what to do. You might build that feature so it's backwards compatible; you might start with a task to build a demo version of that feature on a demo branch, then once that's been signed off have another task to make the live version. Or other options.
+                </p>
+            </dd>
+
+            <dt class="Accordion__element__title">Deploy</dt>
+            <dd class="Accordion__element__content">
+                <p>
+                    [Find out how we do deployment](/pages/release-and-deployment.html)
+                </p>
+            </dd>
+
+        </dl>
+    </dd>
+
+    <dt class="Accordion__element__title Accordion__element__title--direct-content">Fortnightly process</dt>
+    <dd class="Accordion__element__content Accordion__element__content--nested">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <dl class="Accordion--nested">
+            <dt class="Accordion__element__title"> Subthing 2.1 </dt>
+            <dd class="Accordion__element__content">
+                Text for subthing 2.1
+            </dd>
+
+            <dt class="Accordion__element__title"> Subthing 2.2 </dt>
+            <dd class="Accordion__element__content">
+                Text for subthing 2.2
+            </dd>
+
+        </dl>
+    </dd>
+
+    <dt class="Accordion__element__title Accordion__element__title--direct-content">Fortnightly process</dt>
+    <dd class="Accordion__element__content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </dd>
+
+</dl>
+
 
 ## Fortnightly process
 
@@ -47,131 +257,6 @@ Make sure to get ready for a demo before you give the demo.  The law of Sod indi
 ### Retrospective
 
 It's important to spend a little time looking back at each sprint, to work out what went well and what needs fixing in our process. We discuss all of this in a regular retrospective meeting involving the whole team. This is a great way to make sure that we're always thinking about how we can improve our process, and we fix problems with it early.
-
-## Day-to-day process
-
-This isn't set in stone by any means, but here's how we generally approach our work during a sprint.
-
-### 1. Pick up a new task to work on
-
-All the tasks we decided on in planning are kept in [Asana](https://app.asana.com/). Asana keeps a record of all the information about individual tasks, and also what people have been working on and what stage each task is at. We also use a [Kanban board](http://en.wikipedia.org/wiki/Kanban_board), because it gives a really helpful at-a-glance view of what's going on in the iteration.
-
-Tasks are listed in the relevant project in priority order. But do take a pragmatic approach to deciding what the next task you do is, depending on whether you're waiting for other tasks to get done beforehand.
-
-When you need something to do, just grab the next available task you can work on from the Asana that corresponds to the current sprint, by assigning it to yourself and moving it into the 'In Progress' part of the project.  While you're at it, move the corresponding card on the Kanban board along too.
-
-### 2. Talk to the product owner
-
-Even if you think you know exactly what you're about to attempt when grabbing a new task off the pile, it's always a good idea to double-check with whoever created the task in the first place that you'll be delivering what's expected.
-
-### 3. Talk to the dev team
-
-Talk through the technical approach with others in the team.  Even if you think there's a clear, simple method to take it's still worth double-checking with others as everyone has different experience and knowledge that may lead to something better or simpler.  Doing this also helps to ensure there's not some other work going on that would impact on your ability to carry out the task.
-
-### 4. Create a new feature branch in git flow
-
-We use git-flow to manage our versioning. [Find out more about how we use git flow](/pages/using-git.html)
-
-Add your initials to the feature name so we know who started it off.  For example:
-
-    # Git flow plugin:
-    $ git flow feature start sm/indexing-awesomeness
-
-    # Plain old git:
-    $ git checkout -b feature/sm/indexing-awesomeness develop
-
-### 5. Start working away
-
-Hack away to your heart's content. (After you created automated tests that prove it all works, of course.)
-
-- Features should be small, ideally only affecting a few files (rule of thumb: &lt;5)
-- Commits should be smaller
-- Push up to the *remote* regularly (in case someone else needs to take over)
-
-When you think the feature's done, keep it in its branch for now while you do the following checks.
-
-### 6. Get the task signed off
-
-Move the Asana story to "waiting for sign off" and move the card on the Kanban board to this heading too. Then get the Product Owner to take a look at a working example so they can give you the thumbs up. They might need to check with other people before signing off (like a client); it's their responsibility to do this and let you know when the feature is signed off.  The working example can be given on your local development machine, theirs perhaps, or a demo server running on Heroku or EC2.  Whatever fits best with the feature in question and the circumstances.
-
-<a name="get-your-work-code-reviewed"> </a>
-
-### 7. Get your work code reviewed
-
-Your code should now be reviewed by another developer via a GitHub pull request.  This helps to improve the overall quality of our code.  Listen to their comments.  Don't be defensive &ndash; they're only talking frankly about good coding practices!  Also, don't forget you'll be giving your opinions on their code shortly too.
-
-1.  Squash & Rebase your feature against the latest develop branch
-
-        # Squash commits into as few as possible (rule of thumb: <5)
-        # Example squash & rebase:
-        $ git checkout develop
-        $ git pull origin develop
-        $ git rebase -i develop feature/sm/indexing-awesomeness
-
-2.  Create a GitHub pull-request
-
-    Now either [set up the pull request through GitHub](https://help.github.com/articles/using-pull-requests) or if you have the 'hub' command (which comes with our boxen setup):
-
-        $ hub pull-request -b develop -h feature/sm/indexing-awesomeness
-
-    Where possible add the relevant user story for the title, and include a link to all the details relating to that story or specific task.
-
-    _Make sure the comparison is against the develop branch, not the master_
-
-
-3.  Assign it to someone
-
-    This can be someone working on the same project, or another developer who could understand the code and provide you with useful feedback.
-
-
-### 8. The Code Review
-
-Now the code will get reviewed, and you might want to make changes based on the feedback.
-
-**Reviewer to:**
-
-- Make sure there are enough tests
-- Make sure the tests pass
-- Make sure the code is as easy to understand as is possible
-
-**Author to:**
-
-- Respond to feedback and/or update code
-- Push updates to the *remote*.  The pull request automatically updates with the changes.
-
-### 9. Closing the pull request and finishing the feature
-
-Once the code has been okayed the reviewer can close the pull request.
-
-**Reviewer to:**
-
-- **Rebase** against the latest develop branch
-- **Merge** to develop (no fast-forward)
-
-        # Git flow plugin:
-        $ git flow feature finish sm/indexing-awesomeness
-
-        # Plain old git:
-        $ git checkout develop
-        $ git merge --no-ff feature/sm/indexing-awesomeness
-
-- **Push** `develop` to remote
-- **Close** the *pull request* in github
-- **Delete** the *remote* feature branch
-
-        $ git push origin :feature/sm/indexing-awesomeness
-
-- Move the Asana story to "waiting for deploy" and move the card on the Kanban board to the "waiting for deploy" section, so everyone can easily see which tasks are sitting in develop, ready for deployment.
-
-### 10. Check whether it's ok to deploy to production immediately
-
-Even after being signed off and code-reviewed, your feature might not be ok to be deployed to production. Ideally, every story in the iteration should be able to be deployed as soon as it's signed off; waiting at this stage can cause all sorts of nasty problems when you try to merge and deploy.
-
-If it looks like you'll need this delay for a particular feature, use your best judgement and discuss with the team what to do. You might build that feature so it's backwards compatible; you might start with a task to build a demo version of that feature on a demo branch, then once that's been signed off have another task to make the live version. Or other options.
-
-### 11. Deploy
-
-[Find out how we do deployment](/pages/release-and-deployment.html)
 
 
 ## Working on a Brand New Project

@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Ensuring Quality"
-description: ""
 ---
 {% include JB/setup %}
 
