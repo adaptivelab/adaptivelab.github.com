@@ -61,6 +61,27 @@ html.page-methodology
         margin-left: 0 // Remove the default left margin
         padding-left: 0 // Remove the default left padding
 
+
+        .Ordered-list--context:before, .Ordered-list--number
+            display: inline
+            font-size: 5rem
+            width: 7rem
+            text-align: center
+
+            color: $list-grey
+
+            content: counter(method_list) // Use the counter as content
+            counter-increment: method_list // Increment the counter by 1
+            // Position and style the number
+            position: absolute
+            top: -0.5rem
+            box-sizing: border-box
+
+            @media screen and (min-width: $standard) 
+                font-size: 8rem
+                width: 8rem
+                text-align: right
+
         .Ordered-list--context
 
             position: relative // Create a positioning context
@@ -76,25 +97,8 @@ html.page-methodology
                     min-height: 9rem
                     padding-left: 3rem
 
-            &:before 
-
-                font-size: 5rem
-                width: 7rem
-                text-align: center
-
-                color: $list-grey
-
-                content: counter(method_list) // Use the counter as content
-                counter-increment: method_list // Increment the counter by 1
-                // Position and style the number
-                position: absolute
-                top: -0.5rem
-                box-sizing: border-box
-
-                @media screen and (min-width: $standard) 
-                    font-size: 8rem
-                    width: 8rem
-                    text-align: right
+            &.Ordered-list--no-number:before
+                display: none
 
     .List-item__heading 
         margin: 0

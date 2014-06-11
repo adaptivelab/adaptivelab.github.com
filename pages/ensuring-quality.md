@@ -6,7 +6,8 @@ title: "Ensuring Quality"
 
 <ol class="Ordered-list--wide">
     <li>
-        <div class="Ordered-list--context">
+        <div class="Ordered-list--context Ordered-list--no-number">
+            <span class="Ordered-list--number">3</span>
             <div>
                 <h2 class="List-item__heading">{{ page.title }}</h2>
 <div class="List-item__body" markdown="1">
