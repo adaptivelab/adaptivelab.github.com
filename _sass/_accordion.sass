@@ -1,3 +1,6 @@
+$Accordion-super-wide-margin: 20%
+$Accordion-wide-margin: 15%
+
 dl
     -webkit-margin-before: 0
     -webkit-margin-after: 0
@@ -40,13 +43,22 @@ dd
         &:after
             color: $darkish-gray
 
-    @media screen and (min-width: $standard)
+    @media screen and (min-width: $wide)
 
         > .Accordion__element__title
-            padding: 0 25%
+            padding: 0 $Accordion-wide-margin
 
         > .Accordion__element__title.Accordion__toggle--open, > .Accordion__element__content, > .Accordion__element__content--nested
-            margin: 0 25%
+            margin: 0 $Accordion-wide-margin
+
+    @media screen and (min-width: $super-wide)
+
+        > .Accordion__element__title
+            padding: 0 $Accordion-super-wide-margin
+
+        > .Accordion__element__title.Accordion__toggle--open, > .Accordion__element__content, > .Accordion__element__content--nested
+            margin: 0 $Accordion-super-wide-margin
+
 
 .Accordion--nested
     @extend .Accordion
@@ -89,6 +101,8 @@ dd
 .Accordion__toggle--open
     @extend .Accordion__toggle
     @extend .Accordion__arrow--down
+    &:after
+        right: 0 !important
 
 .Accordion__toggle--closed
     @extend .Accordion__toggle
@@ -117,6 +131,16 @@ dd
         position: absolute
         top: 0
         right: 0
+
+.Accordion--top
+    > .Accordion__arrow
+        @media screen and (min-width: $wide)
+            &:after
+                right: $Accordion-wide-margin
+
+        @media screen and (min-width: $super-wide)
+            &:after
+                right: $Accordion-super-wide-margin
 
 input[type=checkbox] + label
     color: #ccc
