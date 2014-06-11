@@ -270,4 +270,6 @@ def foo():
             </dd>
         </dl>
     </dd>
-</dd>
+</dl>
+
+{% include want-to-know-more.html %}
