@@ -1,0 +1,102 @@
+// Colors ----------------------------------------------------------------------
+
+// 50 Shades of grey.
+$lightest-grey: rgb(247, 247, 247)
+$just-another-grey: #EDF0EB
+$light-grey: rgb(215, 215, 215)
+$mid-grey: rgb(127, 127, 127)
+$dark-grey: rgb(56, 56, 56)
+$white: rgb(255, 255, 255)
+$black: rgb(0, 0, 0)
+
+$kitchen-green: rgb(90, 115, 107) // Needs to be checked.
+$pastel-green: rgb(118, 163, 149)
+$pale-pastel-green: rgb(187, 202, 197)
+$lipstick-red: rgb(207, 66, 57)
+$lipstick-red-light: rgb(255,98,88)
+$lipstick-red-medium: rgb(242,86,76)
+$lipstick-red-dark: rgb(230,74,64)
+$lipstick-red-shadow: rgba(255,81,70,0.2)
+
+$icon-gray: #474747
+$darker-gray: #1F1F1F
+$darkish-gray: #393737
+$white: #FFFFFF
+$mediumish-gray: #383838
+$lightish-gray: #282828
+$another-lighter-gray: #727272
+$text-gray: #828181
+$another-text-gray: #646464
+$grey-hover: #444344
+$nav-gray: #383637
+$list-grey: #ADADAD
+$list-separator-grey: #D4D4D4
+
+// Barclays colours
+$background-gray: #222222
+$baby-blue: #11c2fd
+$barclays-blue: #00C1FF
+
+// YouGov colours
+$soma-pink: #FF4550
+
+// Asos colours
+$asos-orange: #FDD128
+$asos-hover: #B28900
+
+// Fraggl colours
+$fraggl-green: #C0DADB
+$fraggl-hover: #458080
+
+
+$bg: $white
+$header-colour: $nav-gray
+$header-link: $another-lighter-gray
+$header-link-highlight: $white
+$headers: $dark-grey
+$copy: $text-gray
+$footer-copy: $mediumish-gray
+$footer-copy-hover: $pastel-green
+$links: $lipstick-red-medium
+$links-hover: $lipstick-red-dark
+$solid-borders: $dark-grey
+$contrast-copy: $white
+$contrast-bg: $dark-grey
+$contrast-dotted-borders: $pastel-green
+$contrast-dotted-borders-alt: $text-gray
+$button-border: $lipstick-red
+$button-gradient-top: $lipstick-red-light
+$button-gradient-middle: $lipstick-red-medium
+$button-gradient-bottom: $lipstick-red-dark
+$button-gradient-dark-bottom: darken($lipstick-red-dark, 15%)
+$button-shadow: $lipstick-red-shadow
+$button-copy: $white
+$button-mono-border: $dark-grey
+$button-mono-copy: $dark-grey
+$error-message: $lipstick-red-dark
+$colour-of-the-majority-of-dotted-lines: $pale-pastel-green  // There's one that isn't...
+$wunderkammer_signup_attention_grabbing_background_colour: #ED4747
+
+
+
+// Gradients -------------------------------------------------------------------
+
+.button-gradient
+    background: $button-gradient-middle // Old browsers
+    background: -moz-linear-gradient(top,  $button-gradient-top 0%, $button-gradient-middle 50%, $button-gradient-bottom 100%) // FF3.6+
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$button-gradient-top), color-stop(50%,$button-gradient-middle), color-stop(100%,$button-gradient-bottom)) // Chrome,Safari4+
+    background: -webkit-linear-gradient(top,  $button-gradient-top 0%,$button-gradient-middle 50%,$button-gradient-bottom 100%) // Chrome10+,Safari5.1+
+    background: -o-linear-gradient(top,  $button-gradient-top 0%,$button-gradient-middle 50%,$button-gradient-bottom 100%) // Opera 11.10+
+    background: -ms-linear-gradient(top,  $button-gradient-top 0%,$button-gradient-middle 50%,$button-gradient-bottom 100%) // IE10+
+    background: linear-gradient(to bottom,  $button-gradient-top 0%,$button-gradient-middle 50%,$button-gradient-bottom 100%) // W3C
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6258', endColorstr='#e64a40',GradientType=0 ) // IE6-9
+
+.button-gradient-dark
+    background: $button-gradient-middle // Old browsers
+    background: -moz-linear-gradient(top,  $button-gradient-top 0%, $button-gradient-middle 50%, $button-gradient-dark-bottom 100%) // FF3.6+
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$button-gradient-top), color-stop(50%,$button-gradient-middle), color-stop(100%,$button-gradient-dark-bottom)) // Chrome,Safari4+
+    background: -webkit-linear-gradient(top,  $button-gradient-top 0%,$button-gradient-middle 50%,$button-gradient-dark-bottom 100%) // Chrome10+,Safari5.1+
+    background: -o-linear-gradient(top,  $button-gradient-top 0%,$button-gradient-middle 50%,$button-gradient-dark-bottom 100%) // Opera 11.10+
+    background: -ms-linear-gradient(top,  $button-gradient-top 0%,$button-gradient-middle 50%,$button-gradient-dark-bottom 100%) // IE10+
+    background: linear-gradient(to bottom,  $button-gradient-top 0%,$button-gradient-middle 50%,$button-gradient-dark-bottom 100%) // W3C
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6258', endColorstr='#e64a40',GradientType=0 ) // IE6-9

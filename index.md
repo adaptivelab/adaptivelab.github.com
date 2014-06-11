@@ -12,7 +12,7 @@ title: Methodology
 
 <ol id="methodology_list" class="Ordered-list--wide">
   <li>
-    <a href="pages/fearless-development.html">
+    <a href="pages/fearless-development.html" class="Ordered-list--context">
       <div>
         <h2 class="List-item__heading">Fearless Development</h2>
         <p class="List-item__body">
@@ -23,7 +23,7 @@ title: Methodology
   </li>
 
   <li>
-    <a href="pages/project-management.html">
+    <a href="pages/project-management.html" class="Ordered-list--context">
       <div>
         <h2 class="List-item__heading">Project Management</h2>
         <p class="List-item__body">
@@ -34,7 +34,7 @@ title: Methodology
   </li>
 
   <li>
-    <a href="pages/ensuring-quality.html">
+    <a href="pages/ensuring-quality.html" class="Ordered-list--context">
       <div>
         <h2 class="List-item__heading">Ensuring Quality</h2>
         <p class="List-item__body">
@@ -45,7 +45,7 @@ title: Methodology
   </li>
 
   <li>
-    <a href="pages/using-git.html">
+    <a href="pages/using-git.html" class="Ordered-list--context">
       <div>
         <h2 class="List-item__heading">Using Git</h2>
         <p class="List-item__body">
@@ -56,7 +56,7 @@ title: Methodology
   </li>
 
   <li>
-    <a href="pages/environments.html">
+    <a href="pages/environments.html" class="Ordered-list--context">
       <div>
         <h2 class="List-item__heading">Environments</h2>
         <p class="List-item__body">
@@ -67,7 +67,7 @@ title: Methodology
   </li>
 
   <li>
-    <a href="pages/testing.html">
+    <a href="pages/testing.html" class="Ordered-list--context">
       <div>
         <h2 class="List-item__heading">Testing</h2>
         <p class="List-item__body">
@@ -78,7 +78,7 @@ title: Methodology
   </li>
 
   <li>
-    <a href="pages/reusability.html">
+    <a href="pages/reusability.html" class="Ordered-list--context">
       <div>
         <h2 class="List-item__heading">Reusability</h2>
         <p class="List-item__body">
@@ -89,7 +89,7 @@ title: Methodology
   </li>
 
   <li>
-    <a href="pages/release-and-deployment.html">
+    <a href="pages/release-and-deployment.html" class="Ordered-list--context">
       <div>
         <h2 class="List-item__heading">Release and Deployment</h2>
         <p class="List-item__body">
@@ -100,7 +100,7 @@ title: Methodology
   </li>
 
   <li>
-    <a href="pages/indicators.html">
+    <a href="pages/indicators.html" class="Ordered-list--context">
       <div>
         <h2 class="List-item__heading">Indicators</h2>
         <p class="List-item__body">
@@ -111,7 +111,7 @@ title: Methodology
   </li>
 
   <li>
-    <a href="pages/security.html">
+    <a href="pages/security.html" class="Ordered-list--context">
       <div>
         <h2 class="List-item__heading">Security</h2>
         <p class="List-item__body">
@@ -122,7 +122,7 @@ title: Methodology
   </li>
 
   <li>
-    <a href="pages/freelancers-guide.html">
+    <a href="pages/freelancers-guide.html" class="Ordered-list--context">
       <div>
         <h2 class="List-item__heading">Freelancer's Guide</h2>
         <p class="List-item__body">
@@ -133,7 +133,7 @@ title: Methodology
   </li>
 
   <li>
-    <a href="pages/python-style-guides.html">
+    <a href="pages/python-style-guides.html" class="Ordered-list--context">
       <div>
         <h2 class="List-item__heading">Style Guides</h2>
         <p class="List-item__body">

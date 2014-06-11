@@ -1,0 +1,125 @@
+html.page-methodology 
+    margin: 0
+    padding: 0
+    -webkit-font-smoothing: antialiased
+
+    body 
+        color: $mediumish-gray
+
+    section 
+        padding: 0
+
+    @media screen and (min-width: $standard) 
+        div#container 
+            > section 
+                margin: 0
+                padding: 0
+                margin-top: 2em
+                width: 100%
+
+                > section 
+                    margin: 0
+                    padding: 0
+                    width: 100%
+
+    // Fixes true to all culture pages. (people and handbook)
+    h2, h3, h4 
+        word-wrap: break-word
+
+    h1 
+        font-size: 34px
+        font-size: 2.1rem
+        margin: 48px auto 16px auto
+        margin: 3rem auto 1rem auto
+
+    .Headline 
+        font-size: 24px
+        font-size: 1.5rem
+        margin: 0 auto
+        text-align: center
+        max-width: 650px
+        width: 80%
+
+        line-height: 32px
+        line-height: 2rem
+
+        margin-bottom: 36px
+        margin-bottom: 3rem
+
+        @media screen and (min-width: $standard) 
+            margin-bottom: 60px
+            margin-bottom: 5rem
+
+.Ordered-list--wide 
+    counter-reset: method_list
+    margin: 0 auto
+    padding-left: 0 // Remove the default left padding
+    max-width: 900px
+
+    > li 
+        list-style-type: none
+        margin-left: 0 // Remove the default left margin
+        padding-left: 0 // Remove the default left padding
+
+        .Ordered-list--context
+
+            position: relative // Create a positioning context
+            list-style: none // Disable the normal item numbering
+
+            > div 
+                margin: 0 0 3rem 7rem // Give each list item a left margin to make room for the numbers
+                box-sizing: border-box
+
+                @media screen and (min-width: $standard) 
+                    margin: 0 0 3rem 11rem // Give each list item a left margin to make room for the numbers
+                    border-left: 1px solid $list-separator-grey
+                    min-height: 9rem
+                    padding-left: 3rem
+
+            &:before 
+
+                font-size: 5rem
+                width: 7rem
+                text-align: center
+
+                color: $list-grey
+
+                content: counter(method_list) // Use the counter as content
+                counter-increment: method_list // Increment the counter by 1
+                // Position and style the number
+                position: absolute
+                top: -0.5rem
+                box-sizing: border-box
+
+                @media screen and (min-width: $standard) 
+                    font-size: 8rem
+                    width: 8rem
+                    text-align: right
+
+    .List-item__heading 
+        margin: 0
+        text-align: left
+        font-size: 1.8rem
+        margin-bottom: 1rem
+
+        @media screen and (min-width: $standard) 
+            font-size: 2.2rem
+
+    .List-item__body 
+        color: $mediumish-gray
+        margin: 0
+        width: 90%
+
+pre code
+    // white-space: pre-wrap // css-3
+    // white-space: -moz-pre-wrap !important // Mozilla, since 1999
+    // white-space: -pre-wrap // Opera 4-6
+    // white-space: -o-pre-wrap // Opera 7
+    // word-wrap: break-word // Internet Explorer 5.5+
+    display: block
+    font-family: 'Monaco', 'Consolas', fixed
+    line-height: 35px
+    background: $background-gray
+    color: white
+    padding: 25px 30px
+    border-radius: 10px
