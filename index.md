@@ -47,6 +47,9 @@ By hosting this document on github, we can facilitate changes and improvements o
 1. [Python Style Guidelines](pages/python-style-guides.html) -
   How we write beautiful python code.
 
+1. [Ruby Style Guidelines](pages/ruby-style-guides.html) -
+  How we write beautiful Ruby code.
+
 <div class="dotted-rule">
 </div>
 <section class='text-block'>
