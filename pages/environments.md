@@ -37,7 +37,8 @@ The one you start out in, that you can mess about in and that you can get comple
 
 Third party APIs should be used sparingly in this environment - if the third party has a sandbox API for development then that should be what's configured to run.  You should definitely think twice before allowing production credentials into this environment.
 </div>
-        <dl class="Accordion--nested">
+            </dd>
+
             <dt class="Accordion__element__title">2. Test</dt>
             <dd class="Accordion__element__content">
 <div markdown="1">
@@ -45,7 +46,8 @@ The environment all tests are run in.  Each test should create its own data for 
 
 There should be no third party calls made in this environment - credentials should be set up with dummy information that gets used within tests, but mocks will allow you to fake the results as you'd expect to see them so that tests can be run stand-alone.
 </div>
-        <dl class="Accordion--nested">
+            </dd>
+
             <dt class="Accordion__element__title">3. Demo</dt>
             <dd class="Accordion__element__content">
 <div markdown="1">
@@ -53,7 +55,8 @@ Might never get used for some projects, but is a handy environment to have for d
 
 The demo environment should have some data that makes it look and feel more like the production environment.  To be effective, it may be necessary for apps running in this environment to get hold of regular updates of data so they look good enough for sign-off.
 </div>
-        <dl class="Accordion--nested">
+            </dd>
+
             <dt class="Accordion__element__title">4. Staging</dt>
             <dd class="Accordion__element__content">
 <div markdown="1">
@@ -61,12 +64,14 @@ The final step before release.  The staging environment should look exactly like
 
 The staging environment should hold data that's as close as possible to the production system and it should also match the hardware setup, meaning it can be used for performance testing - hammering the system in a repeatable and automated way until it cannee cope any more.
 </div>
-        <dl class="Accordion--nested">
+            </dd>
+
             <dt class="Accordion__element__title">5. Production</dt>
             <dd class="Accordion__element__content">
 <div markdown="1">
 The live system.  It should have minimal logging information (enough so that you have a view on what's going on and what's going wrong) and everything turned on (caching, third party APIs).
 </div>
+            </dd>
         </dl>
     </dd>
 </dl>

@@ -31,13 +31,15 @@ For web projects, [Google Analytics](http://www.google.co.uk/analytics/) is an o
 <div markdown="1">
 As laid out in the [guide on multiple environments](/pages/environments.html), set up different tracking codes for production than for other environments.  That way you can happily click on your newly tracked features in development and you'll be able to see the results clearly on your separate test analytics account the next day, without all the noise of the rest of the world getting in the way.  As an extra bonus it means you won't have to remove demo/staging traffic from your statistics.
 </div>
-        <dl class="Accordion--nested">
+            </dd>
+
             <dt class="Accordion__element__title">Track Everything!</dt>
             <dd class="Accordion__element__content">
 <div markdown="1">
 Don't forget how to set up tracking for ajax calls and other actions that aren't a simple page view.  It's easy to do and as always, the earlier you do it the more data you'll gather.
 </div>
-        <dl class="Accordion--nested">
+            </dd>
+
             <dt class="Accordion__element__title">Content Experiments</dt>
             <dd class="Accordion__element__content">
 <div markdown="1">

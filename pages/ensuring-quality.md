@@ -39,20 +39,21 @@ We've covered [the ins and outs of testing](/pages/testing.html) in more detail 
 <div markdown="1">
 When the test coverage is good, you can hack away happily, safe in the knowledge that if what you've just produced happens to break some old bit of code, then that breakage is at least going to be picked up before release.  It's a big problem for long-running projects, which is why it's important to test everything you add - even the minor changes, so that problems of regression get picked up in the future by you and any of your team-mates.
 </div>
-        <dl class="Accordion--nested">
+            </dd>
 
             <dt class="Accordion__element__title">Ensuring Delivery to Spec</dt>
             <dd class="Accordion__element__content">
 <div markdown="1">
 Tests can be used at the outset like a blueprint for what it is you're about to build.  Put high-level tests in place at the start of a task that describe what it is the outcome will be and as you work away, adding unit tests in for the components you build, once the high-level tests pass then job done!
 </div>
-        <dl class="Accordion--nested">
+            </dd>
 
             <dt class="Accordion__element__title">Getting Ready for a Release</dt>
             <dd class="Accordion__element__content">
 <div markdown="1">
 When the team is united in their goal for complete test coverage, once a sprint is done and there is a release to be released, once the code has all been merged in together, a green test pass will take off some of the pressure that hitting the deploy button won't turn out hideously badly.
 </div>
+            </dd>
         </dl>
     </dd>
 

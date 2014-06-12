@@ -62,9 +62,11 @@ Speed is worth thinking about - it may make you decide to use mocks instead of a
     <dd class="Accordion__element__content Accordion__element__content--nested">
 <div markdown="1">
 We use [Jenkins](http://jenkins-ci.org/) as our continuous integration server.  He sits there waiting for any code changes before he goes and runs all of the tests to give the green light on new releases.
-
-### Add new projects to Jenkins from the start
-
+</div>
+        <dl class="Accordion--nested">
+            <dt class="Accordion__element__title">Add new projects to Jenkins from the start</dt>
+            <dd class="Accordion__element__content">
+<div markdown="1">
 When a new repo is created, add it to Jenkins.  We track the master and develop branches so that we can see the whole picture on development before knowing for certain that the code is at least ready for a release.
 
 It doesn't matter if there are no tests or if it's not set up right.  As soon as it's in there, everyone can have visibility that these things need to be done.
@@ -74,7 +76,7 @@ It doesn't matter if there are no tests or if it's not set up right.  As soon as
 TODO: Explain how to add to the jenkins templates
  TODO: Explain jenkins.sh -->
 </div>
-        <dl class="Accordion--nested">
+            </dd>
             <dt class="Accordion__element__title">Add your feature branch if development is long-running</dt>
             <dd class="Accordion__element__content">
 <div markdown="1">
