@@ -16,10 +16,11 @@
 
 	$(function() {
 
-		$('.Accordion--top dd').hide();
-		$('.Accordion--top dt').addClass("Accordion__toggle--closed");
+		$('.Accordion--top > dd').hide();
+		$('.Accordion--top > dt').addClass("Accordion__toggle--closed");
+		$('.Accordion--top > dd dt').addClass("Accordion__element--no-arrow");
 
-		$('.Accordion--top dt').click(function() {
+		$('.Accordion--top > dt').click(function() {
 			toggleAccordionElementState($(this));
 			showOrHideAccordionContent($(this));
 			return false;
