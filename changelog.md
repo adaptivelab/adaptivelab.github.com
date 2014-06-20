@@ -5,6 +5,9 @@ Incremental version bumps that were not released publicly are nested where appro
 
 P.S. If there is a standard (popular) changelog format, please let me know.
 
+- **0.2.15 : 2012.06.20**
+    - 0.2.15 : Update css path in application file
+
 - **0.2.14 : 2012.06.13**
     - **Features**
     - 0.2.14 : Add Ruby style guide
