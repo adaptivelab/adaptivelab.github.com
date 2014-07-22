@@ -57,7 +57,7 @@ Your way of working
 Communication
 -------------
 
-* Have at least one near-instant contact method during your working hours, like the phone or chat (we use [HipChat](http://www.hipchat.com)), for when we need to talk to you about something urgent (not so we can bug you every 5 minutes).
+* Have at least one near-instant contact method during your working hours, like the phone or chat (we use [Slack](https://slack.com/)), for when we need to talk to you about something urgent (not so we can bug you every 5 minutes).
 * Get in touch pro-actively to let us know about obstacles, or things you’re struggling with. We might be able to help!
 * You need to let us know when work is over-running the estimates we made together, or there are extra things you think need to be done. This isn’t so we can berate you, but so we can agree on the best way  to respond.
 
